@@ -109,7 +109,7 @@
 
                 <!-- Download button -->
 
-                <button type="submit">PLAY FREE NOW</button>
+                <button type="submit" class="button-default-text">PLAY FREE NOW</button>
             </div>
 
         </div>
@@ -137,21 +137,40 @@
 
     <!-- Platform selection -->
     <div class="platform">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between h-100">
             <div class="platform-select">
-                <button class="platform-btn" id="PC">PC</button>
-                <button class="platform-btn" id="PS4">PS4</button>
-                <button class="platform-btn" id="XBOX">XBOX</button>
-                <button class="platform-btn" id="NS">NINTENDO SWITCH</button>
-                <button class="platform-btn" id="BLOG">BLOG</button>
+                <button class="platform-btn vertical-center button-default-text" id="PC">PC</button>
+                <button class="platform-btn vertical-center button-default-text" id="PS4">PS4</button>
+                <button class="platform-btn vertical-center button-default-text" id="XBOX">XBOX</button>
+                <button class="platform-btn vertical-center button-default-text" id="NS">NINTENDO SWITCH</button>
+                <button class="platform-btn vertical-center button-default-text" id="BLOG">BLOG</button>
             </div>
             <div class="search-news">
                 <div class="search-icon"></div>
-                <input type="search" name="search-news" id="" placeholder="Search Warframe News">
+                <div class="vertical-center">
+                    <input class="search-field w-100" type="search" name="search-news" id="" placeholder="Search Warframe News">
+                </div>
+
             </div>
         </div>
     </div>
 
+    <!-- Platform news -->
+    <div class="platform-news">
+        <div class="container d-flex justify-content-between">
+            <div class="news-item col-lg-4">
+                <div class="news-image-layer">
+                    <img src="#" alt="" class="news-image news-image-background">
+                    <div class="news-image news-image-foreground"></div>
+                </div>
+                <div class="news-text-area">
+                    <div class="news-title">THE REMOTE OBSERVER: VOL 62</div>
+                    <div class="news-description">Cleaning Up Those Bugs: A Domestik Tale!</div>
+                    <button class="button-default-text news-button">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
