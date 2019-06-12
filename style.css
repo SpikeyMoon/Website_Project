@@ -11,34 +11,63 @@ html, body {
     width: 100%;
 }
 
-div {
+.primary-content  {
     position: absolute;
     top: 0;
+    width: 100%;
     height: 100%;
     transition: 400ms;
-    width: 100%;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.up {
+.secondary-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 400ms;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+}
+
+.primary-content-previous {
     top: -100%;
 }
 
-.down {
+.primary-content-next {
     top: 100%;
 }
 
-.current {
+.primary-content-current {
     top: 0%;
 }
 
-.block-1 {
-    background: rgba(0, 238, 255, 0.397);
+.secondary-content-previous {
+    left: -100%;
 }
 
-.block-2 {
-    background: aliceblue;
+.secondary-content-current {
+    left: 0%;
 }
 
-.block-3 {
-    background: aquamarine;
+.secondary-content-next {
+    left: 100%;
+}
+
+nav.navigation-menu {
+    width: 60%;
+    height: 100%;
+    background: #ffffff99;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 400ms;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 2;
+}
+
+nav.navigation-menu.navigation-active {
+    left: 0;
 }
