@@ -13,7 +13,7 @@ $(function () {
         var obj = $(".primary-content-current");
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
             // scroll up
-            if (obj.prev().is('.primary-content')) {
+            if (obj.prev().is(".primary-content")) {
                 scrolledUp++;
                 scrolledDown = 0;
                 // console.log("This happened");
@@ -29,7 +29,7 @@ $(function () {
         }
         else {
             // scroll down
-            if (obj.next().is('.primary-content')) {
+            if (obj.next().is(".primary-content")) {
                 scrolledDown++;
                 scrolledUp = 0;
                 // console.log("That happened");
@@ -47,14 +47,51 @@ $(function () {
     });
     ////////////////////////////////
 
+    const sectionType = {
+        PRIMARY : 'primary',
+        SECONDARY : 'secondary'
+    }
 
-
-    function videoControl() {
-        var videos = $('video')[0];
-        videos.pause();
-        var video = $('.primary-content-current > .secondary-content-current > video')[0];
-        if (video.paused) {
-            video.play();
+    function jumpToSection(destination, secType) {
+        switch(secType) {
+            case sectionType.PRIMARY:
+                var jumpTarget = destination;
+                var sections = $('primary-content-current').siblings();
+                var passedCurrentContent = false;
+                for(section in sections) {
+                    section.removeClass(".primary-content-next");
+                    section.removeClass(".primary-content-previous");
+                    section.removeClass(".primary-content-current");
+                    if(section == sections[jumpTarget]) {
+                        passedCurrentContent = true;
+                        section.addClass(".primary-content-current");
+                        continue;
+                    }
+                    if(passedCurrentContent) {
+                        section.addClass(".primary-content-next");
+                    } else {
+                        section.addClass('.primary-content-previous');
+                    }
+                }
+            case sectionType.SECONDARY:
+                    var jumpTarget = destination;
+                    var sections = $('secondary-content-current').siblings();
+                    var passedCurrentContent = false;
+                    for(section in sections) {
+                        section.removeClass(".secondary-content-next");
+                        section.removeClass(".secondary-content-previous");
+                        section.removeClass(".secondary-content-current");
+                        if(section == sections[jumpTarget]) {
+                            passedCurrentContent = true;
+                            section.addClass(".secondary-content-current");
+                            continue;
+                        }
+                        if(passedCurrentContent) {
+                            section.addClass(".secondary-content-next");
+                        } else {
+                            section.addClass('.secondary-content-previous');
+                        }
+                    }
         }
     }
 
@@ -88,7 +125,6 @@ $(function () {
         } else {
             secondaryContentReset();
         }
-        videoControl();
     }, 5000);
 
     //TODO change this to nav menu only
