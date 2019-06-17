@@ -1,3 +1,5 @@
+
+
 $(function () {
     ////////////////////////////////
     //Initialize variables
@@ -7,7 +9,6 @@ $(function () {
 
     ////////////////////////////////
     //Change sections by scrolling
-
     $(window).bind('mousewheel DOMMouseScroll', function (event) {
         var obj = $(".primary-content-current");
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
@@ -47,6 +48,7 @@ $(function () {
     ////////////////////////////////
 
 
+
     function videoControl() {
         var videos = $('video')[0];
         videos.pause();
@@ -58,9 +60,9 @@ $(function () {
 
     ///////////////////////////////////////////
     //Reset the secondary contents slider classes
-    function secondaryContentReset () {
+    function secondaryContentReset() {
         var obj = $(".primary-content-current > .secondary-content-1");
-        
+
         obj.removeClass("secondary-content-previous");
         obj.addClass("secondary-content-current");
 
@@ -74,7 +76,7 @@ $(function () {
     }
     //////////////////////////////////////////
 
-    
+
     setInterval(function () {
         var obj = $(".primary-content-current > .secondary-content-current");
 
@@ -90,8 +92,17 @@ $(function () {
     }, 5000);
 
     //TODO change this to nav menu only
-    $(document).click(function (e) { 
+    $(".nav-menu-opener").click(function (e) {
         e.preventDefault();
-        $('nav').toggleClass('navigation-active');
+        $("nav").toggleClass("navigation-active");
+        $(".nav-menu-opener").toggleClass("nav-menu-opener-active");
     });
+
+    // $(document).click(function (e) {
+    //     e.preventDefault();
+    //     if ($("nav").hasClass("navigation-active")) {
+    //         $("nav").toggleClass("navigation-active");
+    //         $(".nav-menu-opener").toggleClass("nav-menu-opener-active");
+    //     }
+    // });
 });
