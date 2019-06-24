@@ -233,7 +233,7 @@ nav.navigation-menu.navigation-active {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 5%;
+    right: 2.5%;
     max-width: 20%;
     max-height: 60%;
     z-index: 100;
@@ -241,15 +241,68 @@ nav.navigation-menu.navigation-active {
 
 .primary-nav-section {
     height: initial;
-    width: min-content;
+    width: max-content;
     margin: 0;
     margin-left: auto;
+}
+
+.secondary-content-navigation {
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    display: inline-flex;
+    z-index: 2;
+    height: max-content;
+    width: max-content;
+}
+
+.secondary-navigation {
+    width: 50px;
+    height: 50px;
+    background: #00000055;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 0.6rem;
+}
+
+.secondary-navigation:hover {
+    background: #00000088;
+}
+
+.secondary-navigation:hover i{
+    color: #ffffff!important;
+}
+
+.transitioning:before {
+    color: #ffffff!important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f04c";
+}
+
+.paused:before {
+    color: #999999!important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f04b";
+}
+
+.secondary-navigation i{
+    font-size: 25px;
+    color: #999999;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secondary-navigation-previous i, .secondary-navigation-next i{
+    font-size: 40px;
 }
 
 .section-switch-tooltip {
     display: inline-flex;
     justify-content: end;
-    width: initial;
+    min-width: max-content;
     margin-bottom: 8px;
     transition: 400ms;
 }
@@ -277,7 +330,6 @@ nav.navigation-menu.navigation-active {
 
 .section-title {
     text-align: right;
-    height: max-content;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 1.5rem;
@@ -290,6 +342,7 @@ nav.navigation-menu.navigation-active {
     transform-origin: 150%;
     transform: scale(0);
     cursor: pointer;
+    display: inline-block;
 }
 
 .nav-menu-opener {
@@ -330,3 +383,84 @@ nav.navigation-menu.navigation-active {
     content:"\f00d";
 }
 
+.secondary-content * {
+    position: absolute;
+}
+
+.secondary-content-title {
+    font-size: 7rem;
+    color: #ffffff;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.emphasis {
+    font-size: 5rem;
+    color: brown;
+}
+
+.secondary-content-descriptions {
+    left: 10%;
+    top: 55%;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.default_button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    border:none;
+    border-radius: 0.5rem;
+    transition: 400ms;
+}
+
+#WWU_button {
+    left: 10%;
+    top: 55%;
+    background: #313131;
+    color: #ffffff;
+}
+
+#WWU_button:hover {
+    background: #202020;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .secondary-content-descriptions {
+        top: 43%;
+    }
+    #WWU_button {
+        top: 43%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1366px){
+    .secondary-content-descriptions {
+        top: 45%;
+    }
+    #WWU_button {
+        top: 44%;
+    }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1600px){
+    .secondary-content-descriptions {
+        top: 52%;
+    }
+    #WWU_button {
+        top: 52%;
+    }
+}
+
+/* Replace with video */
+.video_placeholder {
+    background: #00000033;
+    min-height: 40%;
+    max-width: 49%;
+    right: 13%;
+    top: 50%;
+    transform: translateY(-50%);
+}
