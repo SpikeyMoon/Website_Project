@@ -417,7 +417,7 @@ nav.navigation-menu.navigation-active {
     transition: 400ms;
 }
 
-#WWU_button {
+.secondary-content button {
     left: 10%;
     top: 55%;
     background: #313131;
@@ -430,19 +430,19 @@ nav.navigation-menu.navigation-active {
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .secondary-content-descriptions {
-        top: 43%;
+        top: 55%;
     }
     #WWU_button {
-        top: 43%;
+        top: 55%;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1366px){
     .secondary-content-descriptions {
-        top: 45%;
+        top: 60%;
     }
     #WWU_button {
-        top: 44%;
+        top: 60%;
     }
 }
 
@@ -463,4 +463,25 @@ nav.navigation-menu.navigation-active {
     right: 13%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.secondary-content-2 h3 {
+
+font-size: 6rem;
+}
+
+.secondary-content-2 .emphasis {
+    font-size: 8rem;
+}
+
+.secondary-content-2 p {margin-top: 1rem;}
+
+#GAMES_button {
+
+top: 65%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #GAMES_button {
+        top: 60%;
+    }
 }
