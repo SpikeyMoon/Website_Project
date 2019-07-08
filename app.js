@@ -1,8 +1,34 @@
 
 if (window.innerWidth < 768) {
     //Functions for smaller screens
+    
+    $(function () {
+        var firstTick = 0;
+        var secondTick = 0;
+        $(".nav-menu-opener").click(function (e) {
+            e.preventDefault();
+            $("nav").toggleClass("navigation-active");
+            $(".nav-menu-opener").toggleClass("nav-menu-opener-active");
+            firstTick = Date.now();
+            $(".primary-content-navigation").css("right", "-100%");
+        });
+
+        $("body").click(function (e) {
+            e.preventDefault();
+            if (!$("nav").hasClass("navigation-active")) return;
+            secondTick = Date.now();
+            if ((secondTick - firstTick) < 400) return;
+            if (!$("nav").find("*").is(e.target)) {
+                $("nav").delay(500).removeClass("navigation-active");
+                $(".nav-menu-opener").removeClass("nav-menu-opener-active");
+            }
+            $(".primary-content-navigation").css("right", "2.5%");
+        });
+
+    });
 }
 else {
+    
     //Functions for big screens
     //Hash functions should go here
 
@@ -169,7 +195,6 @@ else {
                     while (obj.next().hasClass("secondary-content")) {
                         obj = obj.next();
                     }
-                    console.log(obj);
                     obj.removeClass("secondary-content-previous");
                     obj.removeClass("secondary-content-next");
                     obj.addClass("secondary-content-current");
@@ -265,7 +290,6 @@ else {
             if (!$("nav").find("*").is(e.target)) {
                 $("nav").delay(500).removeClass("navigation-active");
                 $(".nav-menu-opener").removeClass("nav-menu-opener-active");
-                console.log($("nav > *").is(e.target));
             }
         });
         ///////////////////////////////////////////
@@ -297,8 +321,7 @@ else {
         $("a").click(function (e) {
             var url = this.href;
             url = url.split("#")[1];
-            console.log(url);
-            
+
             if (url.length > 0) {
                 $(".main-content").fadeOut();
                 $(".hash-content").fadeIn();

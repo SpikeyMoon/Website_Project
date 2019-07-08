@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.table-management-table > tbody > tr > th {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.table-management-table > tbody > tr > td {
+    font-size: 24px;
+    width: 600px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.table-management-table {
+    margin-left: 256px;
+    margin-top: 36px;
+}
+
+.edit-account-button {
+    font-size: 20px;
+    padding: 0 24px;
+    color: #999999;
+    height: 48px;
+    margin: auto 0;
+    margin-left: 36px;
+    background: none;
+    border: 2px solid #999999;
+    transition: 300ms;
+    border-radius: 4px;
+}
+
+.edit-account-button:hover {
+    background: #999999;
+    color: #ffffff;
+}
+
+.title-display {
+    font-size: 36px;
+    margin: 0;
+}
+
+.section-title {
+    margin-top: 128px;
+    margin-left: 256px;
+    margin-bottom: 48px;
+    display: flex;
+}
+
+.account-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: 600ms;
+}
+
+.account-navigation {
+    cursor: pointer;
+}
+
+.logout-button {
+    width: calc(100% - 128px);
+    margin: 8px 140px 8px 64px;
+    height: 64px;
+    font-size: 24px;
+    background: none;
+    border: 2px solid #999999;
+    transition: 300ms;
+    border-radius: 4px;
+}
+
+.logout-button:hover {
+    background: #999999;
+    color: #ffffff;
+}
+
+.account-nav {
+    text-align: left;
+    margin-left: 64px;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.profile-picture {
+    height: 128px;
+    width: 128px;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.account-display {
+    height: 30%;
+}
+
+.account-overview {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 22vw;
+    box-shadow: 0px 0px 16px 4px #00000070;
+    z-index: 100;
+}
+
+.active {
+    left: 0!important;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+

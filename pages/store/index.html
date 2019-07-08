@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main page CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="shop container">
+        <div class="title-container">
+            <h1 class="title col-lg-12">All Games</h3>
+        </div>
+        <div class="shop-main-banner col-lg-12">
+
+            <div class="banner-container h-100 w-100 banner-current" id="banner-1">
+                <img src="../../src/store/Banner-1.jpg" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$59.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="banner-container h-100 w-100 banner-next" id="banner-2">
+                <img src="../../src/store/Banner-2.jpg" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$39.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="banner-container h-100 w-100 banner-next" id="banner-3">
+                <img src="../../src/store/Banner-3.png" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$59.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="banner-navigation">
+                <div class="banner-nav banner-active" id="navigation-1"></div>
+                <div class="banner-nav" id="navigation-2"></div>
+                <div class="banner-nav" id="navigation-3"></div>
+            </div>
+
+            <img src="../../src/icons/round-chevron-left.svg" alt="" class="chevron-navigation"
+                id="chevron-navigation-previous" tabindex="0">
+            <img src="../../src/icons/round-chevron-right.svg" alt="" class="chevron-navigation"
+                id="chevron-navigation-next" tabindex="1">
+        </div>
+
+        <div class="shop-sub-banner col-lg-12 d-flex justify-content-between">
+            <div class="banner-container col-lg-4 h-100" id="banner-sub-1">
+                <img src="../../src/store/Mini-banner-1.png" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$59.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+            <div class="banner-container col-lg-4 h-100" id="banner-sub-2">
+                <img src="../../src/store/Mini-banner-2.png" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$59.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+            <div class="banner-container col-lg-4 h-100" id="banner-sub-3">
+                <img src="../../src/store/Mini-banner-3.png" alt="" class="banner-background">
+                <div class="banner-info">
+                    <h3 class="banner-info-price">$59.99</h3>
+                    <button class="default-button">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-browsing container row">
+            <div class="shop-categorize col-lg-3">
+                <div class="franchise-filter">
+
+                    <div class="filter-group-wrapper">
+                        <h5 class="filter-title">Franchise</h5>
+                        <div class="filter-group filter-group-franchise">
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-all-franchise" checked="checked">
+                                <h5 class="filter-label">All Franchise</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-quake">
+                                <h5 class="filter-label">Quake</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-wolfenstein">
+                                <h5 class="filter-label">Wolfenstein</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-doom">
+                                <h5 class="filter-label">Doom</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-evil">
+                                <h5 class="filter-label">The Evil Within</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-fallout">
+                                <h5 class="filter-label">Fallout</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-dishonored">
+                                <h5 class="filter-label">Dishonored</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-prey">
+                                <h5 class="filter-label">Prey</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-tes">
+                                <h5 class="filter-label">The Elder Scrolls</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="franchise" id="filter-rage">
+                                <h5 class="filter-label">Rage</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group-wrapper">
+                        <h5 class="filter-title">Genre</h5>
+                        <div class="filter-group filter-group-genre">
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-all-genres" checked="checked">
+                                <h5 class="filter-label">All Genres</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-onlinerpg">
+                                <h5 class="filter-label">Online RPG</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-stealth">
+                                <h5 class="filter-label">Stealth</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-fps">
+                                <h5 class="filter-label">First Person Shooter</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-rpg">
+                                <h5 class="filter-label">Role-Playing Game</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-strategy">
+                                <h5 class="filter-label">Strategy</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-survivalhorror">
+                                <h5 class="filter-label">Survival Horror</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-collectable-card">
+                                <h5 class="filter-label">Collectable Cards</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-coop">
+                                <h5 class="filter-label">Co-op</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-VR">
+                                <h5 class="filter-label">VR</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-adventure">
+                                <h5 class="filter-label">Adventure</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-firstperson">
+                                <h5 class="filter-label">First Person</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="genre" id="filter-action">
+                                <h5 class="filter-label">Action</h5>
+                                <div class="checkmark"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="filter-group-wrapper">
+                        <h5 class="filter-title">Platform</h5>
+                        <div class="filter-group filter-group-genre">
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-all-platforms" checked="checked">
+                                <h5 class="filter-label">All Platforms</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-psvr">
+                                <h5 class="filter-label">Playstation&copy;VR</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-android">
+                                <h5 class="filter-label">Android</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-x360">
+                                <h5 class="filter-label">Xbox 360</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-rpg">
+                                <h5 class="filter-label">Role-Playing Game</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-switch">
+                                <h5 class="filter-label">Nintendo Switch</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-ps4">
+                                <h5 class="filter-label">Playstation&copy;4</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-ps3">
+                                <h5 class="filter-label">Playstation&copy;3</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-macos">
+                                <h5 class="filter-label">Mac OS</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-htcvive">
+                                <h5 class="filter-label">HTC Vive</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-ios">
+                                <h5 class="filter-label">iOS</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-pc">
+                                <h5 class="filter-label">PC</h5>
+                                <div class="checkmark"></div>
+                            </div>
+                            <div class="filter-container">
+                                <input type="radio" name="platform" id="filter-xbone">
+                                <h5 class="filter-label">Xbox One</h5>
+                                <div class="checkmark"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="franchise-fiter"></div>
+            </div>
+
+            <div class="shop-showcase col-lg-9">
+                <h3 class="title">Showing 1 - 12 of 66 Games</h3>
+                <div class="item-browse">
+                    <div class="item-page row">
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item-card col-lg-4">
+                            <div class="item-container">
+                                <div class="image-container">
+                                    <img src="../../src/store/DOOM_Eternal_packart.jpg" alt="" class="item-image">
+                                </div>
+                                <h5 class="item-title">DOOM Eternal</h5>
+                                <h5 class="item-price">$59.99</h5>
+                                <h5 class="item-platform">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC
+                                </h5>
+                                <button class="item-buy">Pre-Purchase</button>
+                                <button class="item-learn-more">Explore</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="pagination-item disabled" id="prev">&#8249;</li>
+                    <li class="pagination-item pagination-active" id="page-1">1</li>
+                    <li class="pagination-item" id="page-2">2</li>
+                    <li class="pagination-item" id="page-3">3</li>
+                    <li class="pagination-item" id="page-4">4</li>
+                    <li class="pagination-item" id="page-5">5</li>
+                    <li class="pagination-item" id="page-6">6</li>
+                    <li class="pagination-item" id="prev">&#8250;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

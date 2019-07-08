@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+
+.platform-buttons img {
+    height: 20px;
+    filter: invert(1);
+}
+
+.platform-buttons {
+    height: 60px;
+    width: 33%;
+    background: transparent;
+    margin: 10px 20px;
+    color: #ffffff;
+    left: 10%;
+    position: relative;
+    border: 1px solid;
+    transition: 300ms;
+}
+
+.platform-buttons:hover {
+    box-shadow: inset 0px 0px 9px 3px #000000;
+    border: 1px solid #000000!important;
+}
+
+#XBONE {
+    background: rgb(14, 122, 13);
+    border: 1px solid rgb(14, 122, 13);
+}
+
+#STEAM {
+    background: rgb(3, 174, 239);
+    border: 1px solid rgb(3, 174, 239);
+}
+
+button {
+    border-radius: 4px;
+}
+
+#NSWITCH {
+    background: #9f1700;
+    border: 1px solid #9f1700;
+}
+
+#PS4 {
+    background: rgb(25, 50, 133);
+    border: 1px solid rgb(25, 50, 133);
+}
+
+hr {
+    margin: 0 32px;
+    color: #ffffff55;
+    border: 0.5px solid;
+}
+
+.purchase-descriptions {
+    color: #ffffff;
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-size: 14px;
+    padding-bottom: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+li.purchase-descriptions {
+    padding: 0;
+    margin-left: 84px;
+}
+
+.purchase-platforms {
+    margin-left: 32px;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.purchase-title {
+    color: #ffffff;
+    font-family: Orbitron;
+    font-size: 32px;
+    padding: 48px 36px 24px;
+    font-weight: 700;
+}
+
+.purchase {
+    background: url("../../src/game/introbg.jpg");
+}
+
+.media-title {
+    position: absolute;
+    color: #ffffff;
+    bottom: 36px;
+    left: 48px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.media-title i:before {
+    margin-right: 8px;
+}
+
+.media-scrim {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(19,0,0,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.media-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    /* top: calc(50% - 175px); */
+    /* left: calc(50% - 336px); */
+}
+
+.nu-small .media-image {}
+
+.slide-title {
+    position: relative;
+    top: calc(50% - 300px);
+    color: #ffffff;
+    font-family: Orbitron;
+    font-size: 48px;
+    padding-top: 128px;
+    margin-left: 256px;
+    width: 700px;
+    text-transform: uppercase;
+}
+
+.slide-info {
+    position: relative;
+    top: calc(50% - 300px);
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 256px;
+    margin-top: 64px;
+    width: 700px;
+}
+
+.slide-image {
+    position: absolute;
+    top: calc(100% -1000px);
+    left: 0;
+}
+
+.news-time {
+    margin-left: 48px;
+    color: #ffffff;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 36px;
+}
+
+.nu-big .news-time {
+    margin-top: 42px;
+}
+
+.scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(19,0,0);
+    background: linear-gradient(180deg, rgba(19,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(19,0,0,1) 100%);
+}
+
+.news-title {
+    position: relative;
+    color: #ffffff;
+    margin-left: 48px;
+    margin-right: 32px;
+    font-size: 18px;
+    font-family: Orbitron;
+}
+
+.news-type {
+    position: relative;
+    margin-top: 256px;
+    margin-left: 48px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Orbitron, sans-serif;
+}
+
+.news-and-update p {}
+
+.news-image {image-rendering: pixelated;height: 100%;position: absolute;left: -25%;}
+
+.descriptions {
+    font-size: 20px;
+    color: #ffffff;
+    position: relative;
+    left: calc(50% - 32.5vw);
+    text-align: center;
+    max-width: 65vw;
+    font-family: Orbitron, sans-serif;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+.intro-title {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 64px 0 32px;
+    font-size: 48px;
+    font-family: Orbitron, sans-serif;
+}
+
+.intro {
+    position: relative;
+    min-height: max-content;
+    /* height: 70vh; */
+}
+
+html {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.purchase-details {
+    flex: 0 0 50%;
+    width: calc(1600px - 50%);
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #000000;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background: url(../../src/game/purchase.webp);
+    background-size: cover;
+}
+
+.purchase-dialog {
+    flex: 0 0 50%;
+    width: calc(1600px - 50%);
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #000000;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
+
+.purchase {
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.whatsnew {
+    height: 800px;
+    background: orange;
+    position: relative;
+}
+
+.nu-big {
+    min-height: 350px;
+    max-height: 450px;
+    background: #ffffff;
+    max-width: calc(50% - 30px);
+}
+
+.nu-big,.nu-small {
+    margin-bottom: 64px;
+    transition: 300ms;
+    overflow: hidden;
+    margin: 15px 15px;
+    padding: 0;
+}
+
+.nu-small:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 16px 2px #000000;
+}
+
+.nu-big:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 16px 2px #00000066;
+}
+
+.nu-small {
+    max-height: 450px;
+    background: #ffffff;
+    min-height: 350px;
+    max-width: calc(25% - 30px);
+}
+
+.screenshot {
+    position: relative;
+}
+
+.container {
+    min-height: 50vh;
+    max-width: 1600px;
+}
+
+.nu-more {
+    position: relative;
+    left: calc(100% / 2 - 106px);
+    height: 64px;
+    width: 212px;
+    background: none;
+    border: 1.5px solid #ffffff;
+    font-size: 20px;
+    transition: 300ms;
+    margin: 48px 0 64px;
+    color: #ffffff;
+    font-family: Orbitron, sans-serif;
+}
+
+.nu-more:hover {
+    background: #ffffffaa;
+}
+
+.intro-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 48px;
+    font-family: Orbitron, sans-serif;
+}
+
+.media {
+    background: linear-gradient(0deg, #5f2121, #1c1c1c);
+    padding-top: 16px;
+}
+
+.news-and-updates {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #5f2121, #1c1c1c);
+    padding-top: 16px;
+}
+
+.jumbotron button {
+    height: 100px;
+    width: 300px;
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    transition: 600ms;
+    background: #ffffffcc;
+    border: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Orbitron, sans-serif;
+}
+
+i {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.jumbotron button:hover {
+    background: #9e352deb;
+    color: #ffffff;
+}
+
+.buy-button {left: 58%!important;}
+
+.trailer-button {
+    left: 42%!important;
+}
+
+picture {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+picture * {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: scale(1.1);
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
