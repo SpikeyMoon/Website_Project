@@ -30,10 +30,12 @@
         </div>
         <button class="logout-button">LOG OUT</button>
     </div>
+    <!-- Active by default -->
     <div class="account-content account-management active">
         <div class="section-title">
             <p class="title-display">Account Management</p>
             <button class="edit-account-button">EDIT ACCOUNT</button>
+            <p class="section-description">Manage Emails, passwords and more</p>
         </div>
         <div class="section-description"></div>
         <table class="table-management-table">
@@ -71,6 +73,117 @@
             </tr>
         </table>
     </div>
+    <div class="account-content account-edit">
+        <div class="section-title">
+            <p class="title-display w-100">Edit account</p>
+            <p class="section-description">Manage Emails, passwords and more</p>
+        </div>
+        <table class="table-management-table">
+            <tr>
+                <th>Basic Info</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td class="field-description" id="field-first-name">
+                    <input type="text" name="edit-first-name" id="edit-first-name" placeholder="First Name"
+                        value="John">
+                    <div class="tooltip">
+                        Edit your first name
+                    </div>
+                </td>
+                <td class="field-description" id="field-last-name">
+                    <input type="text" name="edit-last-name" id="edit-last-name" placeholder="Last Name" value="Smith">
+                    <div class="tooltip">
+                        Edit your Last name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="field-description" id="field-display-name">
+                    <input type="text" name="edit-display-name" id="edit-display-name" placeholder="Display Name"
+                        value="Jomith">
+                    <div class="tooltip">
+                        Your display name must meet the following requirements:<br>
+                        <ul>
+                            <li>No less than 3 characters</li>
+                            <li>No more than 20 characters</li>
+                            <li>Can use only the following special characters: + - . _</li>
+                            <li>Must only contain letters, numbers, and the above special characters</li>
+                            <li>Must be unique</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="field-description" id="field-email">
+                    <input type="text" name="edit-last-name" id="edit-email" placeholder="Email Adress">
+                    <div class="tooltip">
+                        Change your Email
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <table class="table-management-table">
+            <tr>
+                <th>Change your password</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td class="field-description" id="field-password">
+                    <input type="password" name="edit-first-name" id="edit-password" placeholder="Password">
+                    <div class="tooltip">
+                        Your password must meet the following requirements:<br>
+                        <ul>
+                            <li>Between 8 and 64 characters</li>
+                            <li>Contains a number</li>
+                            <li>Contains a symbol</li>
+                            <li>Contains a lowercase letter</li>
+                            <li>Contains an uppercase letter</li>
+                            <li>Cannot match the username/display name</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="field-description" id="field-password-repeat">
+                    <input type="password" name="edit-last-name" id="edit-password-repeat" placeholder="Confirm New Password">
+                    <div class="tooltip">
+                        Passwords must match
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="table-management-table">
+            <tr>
+                <th>Personalize</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td class="field-description" id="field-region">
+                    <select name="" id="select-region">
+                        <option value="" class="region">North America</option>
+                        <option value="" class="region">South America</option>
+                        <option value="" class="region" selected>Western Europe</option>
+                        <option value="" class="region">Eastern Europe</option>
+                        <option value="" class="region">Asia</option>
+                        <option value="" class="region">Australia & New Zealand</option>
+                        <option value="" class="region">Africa</option>
+                    </select>
+                </td>
+                <td class="field-description" id="field-language">
+                    <select name="" id="select-language">
+                        <option value="" class="region" selected>English</option>
+                        <option value="" class="region">Français</option>
+                        <option value="" class="region">Deutsch</option>
+                        <option value="" class="region">Español</option>
+                        <option value="" class="region">한국어</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="action-button-group">
+            <button class="save-button">SAVE CHANGES</button>
+            <button class="cancel-button">CANCEL</button>
+        </div>
+    </div>
+
     <div class="account-content marketing-preferences"></div>
     <div class="account-content linked-accounts"></div>
     <div class="account-content redeem-code"></div>
@@ -78,9 +191,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
