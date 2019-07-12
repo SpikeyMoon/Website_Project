@@ -3,6 +3,287 @@
     padding: 0;
 }
 
+.profile-image {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.redeem-button {
+    padding: 8px 32px;
+    background: #999999;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 300ms;
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+}
+
+.redeem-button:hover {
+    background: #777777;
+}
+
+.instructions {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+input#redeem-text {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #999999;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+}
+
+.add-code {
+    height: 100%;
+    width: 100%;
+    background: #00000055;
+    z-index: 150;
+    position: absolute;
+}
+
+#date {
+    width: 150px;
+}
+.redeemed > tbody > tr > th {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #999999;
+    padding-bottom: 16px;
+}
+
+.redeemed > tbody > tr > td {
+    font-size: 16px;
+    width: 33%;
+    padding-bottom: 8px;
+    position: relative;
+}
+.history > tbody > tr > th {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #999999;
+    padding-bottom: 16px;
+}
+
+.history > tbody > tr > td {
+    font-size: 16px;
+    width: 33%;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#history-date{width: 150px;}
+#history-action{width: 200px!important;}
+#history-content{width: 400px;}
+
+#content {
+    width: 400px;
+}
+
+#code {
+    width: 200px!important;
+}
+.review-redeemed {
+    margin-left: 256px;
+    margin-right: 22%;
+}
+
+.redeemed {width: 100%;}
+
+.add-platform-button {
+    width: calc((100% - 32px) / 2);
+    height: 48px;
+    margin-bottom: 16px;
+    border: none;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+#battle-button {
+    background: #00B4FF;
+}
+
+#discord-button {
+    background: #7289da;
+}
+
+#twitch-button {
+    background: #6441a5;
+}
+
+#twitch-button:hover {}
+
+.add-body {
+    padding: 16px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.close-menu {
+    font-size: 20px;
+    height: max-content;
+    width: max-content;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.add-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999999;
+}
+
+p, h1, h2, h3, h5 {
+    color: #6d6d6d;
+}
+
+.account-name {
+    text-align: center;
+    font-size: 42px;
+}
+
+.add-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.add-platform-container {
+    height: 500px;
+    width: 450px;
+    background: #ffffff;
+    position: fixed;
+    top: calc(50% - 250px);
+    left: calc(50% - 225px);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.add-code .add-platform-container {
+    height: 300px;
+    top: calc(50% - 150px);
+}
+
+.add-platform {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00000055;
+    z-index: 140;
+}
+
+.clearable {
+    display: none;
+}
+
+.platform-name {position: absolute;text-align: center;width: 100%;bottom: 32px;left: 50%;transform: translateX(-50%);font-size: 20px;color: #999999;font-weight: 600;transition: 300ms;margin: 0;}
+
+.linked .platform-name {
+    color: #ffffff;
+}
+
+.card-display {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    /* transform: translateY(-50%); */
+    text-align: center;
+    z-index: 3;
+}
+
+.card-display::before {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 300ms;
+}
+
+.linked .card-display {
+    filter: invert(1);
+}
+
+.linked-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 256px;
+    margin-right: 15%;
+}
+
+.link-card {
+    width: 250px;
+    height: 300px;
+    background: transparent;
+    border: 2px dashed #999999;
+    margin-right: 32px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.linked-twitch {
+    background: #6441a5;
+    display: none;
+}
+
+.add-new-link:hover {
+    background: #ddd;
+}
+
+.link-card.linked {
+    border: 1px solid transparent;
+}
+
+.linked:hover::after {
+    box-shadow: 0 0 20px 20px #00000033;
+}
+
+.linked:hover .card-display::before {
+    font-size: 125%;
+}
+
+.linked:hover .platform-name {
+    font-size: 125%;
+}
+
+.linked::after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    background: #00000033;
+    box-shadow: 0 0 10px 10px #00000033;
+    transition: 300ms;
+}
+
+.linked-steam {
+    background: #00adee;
+}
+
 .action-button-group {
     margin-left: 256px;
     width: calc(60% - 256px);
@@ -129,7 +410,7 @@ input:focus::placeholder {
 }
 
 .table-management-table > tbody > tr > th {
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #999999;
     padding-bottom: 16px;
@@ -230,7 +511,7 @@ input:focus::placeholder {
     left: 100%;
     transition: 600ms;
     z-index: 1;
-    background: #eeeeee;
+    background: #efefef;
 }
 
 .account-navigation {
@@ -265,6 +546,8 @@ input:focus::placeholder {
     width: 128px;
     margin: auto;
     margin-top: 64px;
+    margin-bottom: 32px;
+    border-radius: 50%;
 }
 
 .account-display {
@@ -297,6 +580,178 @@ input:focus::placeholder {
     left: 0!important;
 }
 
+/* Navigation menu */
+
+.nav-menu-opener {
+    position: fixed;
+    top:2.5%;
+    left: 2.5%;
+    transition: 400ms;
+    background: #00000044;
+    z-index: 100;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav-opener-icon {
+    font-size: 1.5rem;
+    width: min-content;
+    height: min-content;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-opener-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+}
+
+.nav-menu-opener.nav-menu-opener-active {
+    left: 60%;
+    top: 0%;
+}
+
+.nav-menu-opener-active .nav-opener-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content:"\f00d";
+}
+
+
+.navigation-menu {
+    width: 60%;
+    height: 100%;
+    background: #ffffffaa;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 400ms;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 2;
+}
+
+nav.navigation-menu.navigation-active {
+    left: 0;
+}
+
+.navigation-top {
+    height: 10%;
+    background: #00000033;
+}
+
+.main-menu {
+    height: 75%;
+    column-count: 2;
+    display: inline-flex;
+    flex-flow: column wrap;
+    background: #00000044;
+}
+
+.menu-item {
+    height: initial;
+    width: max-content;
+    display: inline-grid;
+    margin: 0 0 10px 0;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.menu-title {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-title:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-sub-item {
+    color:#ffffff99;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    transition-duration: 400ms;
+}
+
+.menu-sub-item:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer {
+    height: 15%; 
+    background: #00000055;
+}
+
+.logo {
+    width: 60%;
+    background: #00000044;
+}
+
+
+.login-signup {
+    width: 40%;
+    display: flex;
+    background: #00000055;
+    
+}
+
+.login-icon {
+    background: red;
+    height: 40%;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.login-text {
+    color: #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+
+.signup-text {
+    color: #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+
+.signup-icon {
+    background: blue;
+    height: 40%;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.logo-item {
+    min-width: 20%;
+    min-height: 40%;
+    max-width: 60%;
+    max-height: 80%;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    background: yellowgreen;
+}
+
+/*  */
+
 html {
     width: 100%;
     height: 100%;
@@ -306,5 +761,5 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background: #eeeeee;
+    background: #efefef;
 }

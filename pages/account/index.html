@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,19 +16,78 @@
 </head>
 
 <body>
+    <!-- Website navigation -->
+    <div class="nav-menu-opener">
+        <i class="fa fa-bars nav-opener-icon"></i>
+    </div>
+
+    <nav class="navigation-menu">
+        <div class="navigation-top d-flex">
+            <div class="logo">
+                <div class="logo-item"></div>
+            </div>
+            <div class="login-signup d-flex">
+                <div class="login">
+                    <div class="login-icon"></div>
+                    <h3 class="login-text">LOGIN</h3>
+                </div>
+                <div class="signup">
+                    <div class="signup-icon"></div>
+                    <h3 class="signup-text">SIGN UP</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu w-100">
+            <div class="menu-item menu-item-1">
+                <a href="#" class="menu-title" id="GAMES">GAMES</a>
+                <a href="#game-1" class="menu-sub-item" id="game-1">Game #1</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Game #2</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Game #3</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Game #4</a>
+                <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
+                <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
+                <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
+                <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a>
+            </div>
+            <div class="menu-item menu-item-2">
+                <a href="#" class="menu-title" id="NEWS">NEWS</a>
+                <a href="#latest" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
+            </div>
+            <div class="menu-item menu-item-3">
+                <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
+                <a href="#forums" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
+                <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
+                <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
+            </div>
+            <div class="menu-item menu-item-4">
+                <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
+                <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
+                <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
+            </div>
+            <div class="menu-item menu-item-5">
+                <a href="#" class="menu-title" id="SHOP">SHOP</a>
+                <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
+                <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
+                <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </nav>
+
     <div class="account-overview">
         <div class="account-display">
             <div class="profile-picture">
-                <img src="" alt="" class="profile-picture">
+                <img src="../../src/account/display.jpg" alt="" class="profile-image">
             </div>
-            <h1 class="account-name"></h1>
+            <h1 class="account-name">JOMITH</h1>
         </div>
         <div class="account-nav">
             <p class="account-navigation account-navigation-1">Account Management</p>
-            <p class="account-navigation account-navigation-2">Marketing Preferences</p>
-            <p class="account-navigation account-navigation-3">Linked Accounts</p>
-            <p class="account-navigation account-navigation-4">Redeem Codes</p>
-            <p class="account-navigation account-navigation-5">Transactions History</p>
+            <p class="account-navigation account-navigation-2">Linked Accounts</p>
+            <p class="account-navigation account-navigation-3">Redeem Codes</p>
+            <p class="account-navigation account-navigation-4">Transactions History</p>
         </div>
         <button class="logout-button">LOG OUT</button>
     </div>
@@ -37,39 +98,54 @@
             <button class="edit-account-button">EDIT ACCOUNT</button>
             <p class="section-description">Manage Emails, passwords and more</p>
         </div>
-        <div class="section-description"></div>
         <table class="table-management-table">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
             </tr>
             <tr>
-                <td>John</td>
-                <td>Smith</td>
+                <td id="first-name">
+                    <p>John</p>
+                </td>
+                <td id="last-name">
+                    <p>Smith</p>
+                </td>
             </tr>
             <tr>
                 <th>Display Name</th>
                 <th>Forums Name</th>
             </tr>
             <tr>
-                <td>Jomith</td>
-                <td>Jomith</td>
+                <td id="display-name">
+                    <p>Jomith</p>
+                </td>
+                <td id="forums-name">
+                    <p>Jomith</p>
+                </td>
             </tr>
             <tr>
                 <th>Email Address</th>
                 <th>Password</th>
             </tr>
             <tr>
-                <td>Smith.John@gmail.com</td>
-                <td>****************</td>
+                <td id="email-address">
+                    <p>Smith.John@gmail.com</p>
+                </td>
+                <td>
+                    <p>****************</p>
+                </td>
             </tr>
             <tr>
-                <th>Country</th>
+                <th>Region</th>
                 <th>Language</th>
             </tr>
             <tr>
-                <td>England</td>
-                <td>English</td>
+                <td id="country">
+                    <p>Western Europe</p>
+                </td>
+                <td id="language">
+                    <p>English</p>
+                </td>
             </tr>
         </table>
     </div>
@@ -143,7 +219,8 @@
                     </div>
                 </td>
                 <td class="field-description" id="field-password-repeat">
-                    <input type="password" name="edit-last-name" id="edit-password-repeat" placeholder="Confirm New Password">
+                    <input type="password" name="edit-last-name" id="edit-password-repeat"
+                        placeholder="Confirm New Password">
                     <div class="tooltip">
                         Passwords must match
                     </div>
@@ -184,10 +261,140 @@
         </div>
     </div>
 
-    <div class="account-content marketing-preferences"></div>
-    <div class="account-content linked-accounts"></div>
-    <div class="account-content redeem-code"></div>
-    <div class="account-content transactions-history"></div>
+    <div class="account-content linked-accounts">
+        <div class="section-title">
+            <p class="title-display">Linked Accounts</p>
+            <p class="section-description">Manage platform, social media, and game account connections.</p>
+        </div>
+        <div class="linked-cards">
+            <div class="link-card linked linked-steam">
+                <i class="fab fa-steam card-display"></i>
+                <p class="platform-name">STEAM</p>
+            </div>
+            <div class="link-card linked linked-twitch">
+                <i class="fab fa-twitch card-display"></i>
+                <p class="platform-name">TWITCH</p>
+            </div>
+            <div class="link-card add-new-link">
+                <i class="fa fa-plus card-display"></i>
+                <p class="platform-name">Add a new platform</p>
+            </div>
+        </div>
+    </div>
+    <div class="add-platform clearable">
+        <div class="add-platform-container">
+            <div class="add-header">
+                <div class="add-text">
+                    <p class="add-title">Link a new account</p>
+                    <p class="add-description">Want to link a new platform to your account? Choose from the available
+                        platforms below</p>
+                </div>
+                <div class="close-menu">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="add-body">
+                <button class="add-platform-button" id="twitch-button" onclick="window.open()"><i
+                        class="fab fa-twitch"></i> TWITCH</button>
+                <button class="add-platform-button" id="discord-button"><i class="fab fa-discord"></i> DISCORD</button>
+                <button class="add-platform-button" id="battle-button"><i class="fab fa-battle-net"></i>
+                    BATTLE.NET</button>
+            </div>
+        </div>
+    </div>
+    <div class="account-content redeem-code">
+        <div class="section-title">
+            <p class="title-display">Redeem Codes</p>
+            <button class="edit-account-button" id="redeem-code-button">REDEEM CODE</button>
+            <p class="section-description">Redeem new codes and view previously redeemed ones.</p>
+        </div>
+        <div class="review-redeemed">
+            <table class="redeemed">
+                <tr>
+                    <th id="date">Date</th>
+                    <th id="code">Code</th>
+                    <th id="content">Content</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>01-06-2019</p>
+                    </td>
+                    <td>
+                        <p>TXNNE-2TSWD-I44LU-DRIAD</p>
+                    </td>
+                    <td>
+                        <p>7 day experience booster</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>24-04-2019</p>
+                    </td>
+                    <td>
+                        <p>VPCAD-EDXBO-L3CZZ-VPOSZ</p>
+                    </td>
+                    <td>
+                        <p>Digital key for HITMAN 2</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="add-code clearable">
+        <div class="add-platform-container">
+            <div class="add-header">
+                <div class="add-text">
+                    <p class="add-title">Redeem code</p>
+                    <p class="add-description">Have a code to use? Enter below</p>
+                </div>
+                <div class="close-menu">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="add-body">
+                <p class="instructions">Codes contain letters, numbers and dashes. Dashes must be included.</p>
+                <input type="text" name="" id="redeem-text">
+                <button class="redeem-button">REDEEM</button>
+            </div>
+        </div>
+    </div>
+    <div class="account-content transactions-history">
+        <div class="section-title">
+            <p class="title-display">Transaction history</p>
+            <p class="section-description">A list of every purchase you've made in the last 6 months.</p>
+        </div>
+        <div class="review-redeemed">
+            <table class="history">
+                <tr>
+                    <th id="history-date">Date</th>
+                    <th id="history-action">Action</th>
+                    <th id="history-content">Content</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>02-06-2019</p>
+                    </td>
+                    <td>
+                        <p>$9.99</p>
+                    </td>
+                    <td>
+                        <p>7 day gold booster</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>25-04-2019</p>
+                    </td>
+                    <td>
+                        <p>$42.99</p>
+                    </td>
+                    <td>
+                        <p>Starter Bundle</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
