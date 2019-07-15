@@ -1,16 +1,4 @@
 $(document).ready(function () {
-    $(".search-button").click(function (e) {
-        e.preventDefault();
-        $(".search-field").toggleClass("input-active");
-    });
-
-    $(".collapse-toggle").click(function (e) {
-        e.preventDefault();
-        var header = $(".main-section-header").has(this);
-        console.log(header);
-        $(header).next().toggleClass("disable-section");
-    });
-
     $(".new-post-button").click(function (e) {
         e.preventDefault();
         $(".select-category").fadeIn();
@@ -34,9 +22,13 @@ $(document).ready(function () {
         window.location = "./newpost.html";
     });
 
-    $("#click-here").click(function (e) { 
+    $("#click-this").click(function (e) { 
         e.preventDefault();
-        window.location = "./allthreads.html";
+        window.location = "./onethread.html";
     });
 
+    $(".click-to-go-home").click(function (e) { 
+        e.preventDefault();
+        window.location = "./index.html";
+    });
 });

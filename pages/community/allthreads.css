@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+.featured {
+    cursor: initial;
+    font-size: 12px;
+    color: gold;
+    margin-right: 8px;
+    transform: translateY(-25%);
+}
+
+.main-section-footer {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    background: #999999;
+    padding: 0 8px;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+}
+
+.current-page {
+    color: #ffffff;
+    position: relative;
+    display: block;
+    padding: 0.4rem .75rem;
+}
+
+.page-link {
+    background: none;
+    color: #ffffff;
+    margin-left: 4px;
+    border: none;
+    transition: 300ms;
+}
+
+.pagi-active {
+    background: #fff;
+    color: #000;
+}
+
+.page-link:hover {
+    background: #ddd!important;
+    color: #333!important;
+}
+
+.page-item {
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+span.answers {
+    font-size: 14px;
+    font-weight: initial;
+}
+
+.votes {
+    font-size: 14px;
+    font-weight: initial;
+}
+
+.thread-answers {
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.thread-votes {
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.thread-name {
+    flex: 0 0 80%;
+    cursor: initial!important;
+}
+
+.thread-date {
+    color: #666!important;
+}
+
+.thread-subtitle {
+    font-size: 14px;
+}
+
+.thread-maker {color: #999;cursor: pointer;transition: 300ms;}
+
+.thread-maker:hover {
+    color: #000;
+}
+
+.thread-title {
+    font-size: 20px;
+    width: max-content;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.thread-title:hover {
+    color: #000000;
+}
+
+.background {
+    background: url("../../src/community/bg-02.jpg")!important;
+}

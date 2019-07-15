@@ -1,36 +1,427 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
 
+<body>
+    <div class="background"></div>
     <div class="container">
         <div class="row main-content">
-            <div class="col-lg-9 breadcrumb">Home</div>
-            <div class="col-lg-3 new-post">
-                <button class="new-post-button"></button>
+            <div class="col-lg-9 breadcrumb-container">
+                <p class="breadcrumb">Home</p>
+                <div class="search-field-container">
+                    <input type="search" name="" id="" class="search-field" placeholder="Search the forums">
+                    <button class="search-button"><i class="fa fa-search"></i></button>
+                </div>
             </div>
-            <div class="col-lg-9 forum-section"></div>
+            <div class="col-lg-3 new-post">
+                <button class="new-post-button">Start new topic</button>
+            </div>
+            <div class="col-lg-9 forum-main">
+                <div class="forum-main-section">
+                    <div class="main-section-header">
+                        <p class="main-section-title">News</p>
+                        <i class="fa fa-chevron-down collapse-toggle"></i>
+                    </div>
+                    <div class="main-section-body">
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name">Announcements & Events</h3>
+                                <p class="category-description"><span class="hoverable">PC Announcements</span>, <span
+                                        class="hoverable">PS4 Announcements</span>, <span class="hoverable">Xbox One
+                                        Announcements</span>, <span class="hoverable">Nintendo Switch
+                                        Announcements</span>
+                                </p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">196,175</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Coming soon to Nintendo Switch</p>
+                                    <p class="thread-poster">Ember-Crow</p>
+                                    <p class="thread-date">1 hour ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">Developer Workshop & Update Notes</h3>
+                                <p class="category-description"><span class="hoverable">PC Update Notes</span>, <span
+                                        class="hoverable">PS4 Update Notes</span>, <span class="hoverable">Xbox One
+                                        Update Notes</span>, <span class="hoverable">Nintendo Update Notes</span>
+                                </p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">254,335</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Paragon hotfix 1.0.0.1</p>
+                                    <p class="thread-poster">Paragon</p>
+                                    <p class="thread-date">2 hour ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name"
+                                    style="position: relative;top: 50%;transform: translateY(-50%);">Livestreams &amp;
+                                    Contests</h3>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">1052</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Welcome to the show</p>
+                                    <p class="thread-poster">RunningMiller</p>
+                                    <p class="thread-date">12 hour ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-main-section">
+                    <div class="main-section-header">
+                        <p class="main-section-title">Games</p>
+                        <i class="fa fa-chevron-down collapse-toggle"></i>
+                    </div>
+                    <div class="main-section-body">
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name">DOOM</h3>
+                                <p class="category-description">Everything DOOM!!!</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">2,365</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Pre-order ready for PS4&reg;;</p>
+                                    <p class="thread-poster">DOOMGUY</p>
+                                    <p class="thread-date">2 weeks ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">PARAGON</h3>
+                                <p class="category-description">Tactics, strats and teamplay</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">10,080</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Paragon hotfix 1.0.0.1</p>
+                                    <p class="thread-poster">Paragon</p>
+                                    <p class="thread-date">2 hour ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name">Steep</h3>
+                                <p class="category-description">Extreme sports in extreme conditions</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">8,485</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Community race is on</p>
+                                    <p class="thread-poster">Steep</p>
+                                    <p class="thread-date">1 week ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-main-section">
+                    <div class="main-section-header">
+                        <p class="main-section-title">Community</p>
+                        <i class="fa fa-chevron-down collapse-toggle"></i>
+                    </div>
+                    <div class="main-section-body">
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name" id="click-here">Players helping players</h3>
+                                <p class="category-description">Post here to get help from the community</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">842,365</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Razor of the seventh sun???</p>
+                                    <p class="thread-poster">ExileDoSomething</p>
+                                    <p class="thread-date">1 minute ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">General discussion</h3>
+                                <p class="category-description">Just about anything</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">6,158,050</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Let's take a moment to appreciate the work of the newest
+                                        patches</p>
+                                    <p class="thread-poster">TheRealHitman</p>
+                                    <p class="thread-date">3 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name"
+                                    style="position: relative;top: 50%;transform: translateY(-50%);">Recruitment</h3>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">100,485</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">12 hours auctioning is comming to an end!</p>
+                                    <p class="thread-poster">Power_Creep_Is_Real</p>
+                                    <p class="thread-date">5 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">Fan Zone</h3>
+                                <p class="category-description">Fan arts, Fan Concepts, Role Playing</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">569,595</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">The easter eggs in the new hotfix</p>
+                                    <p class="thread-poster">Buggs_Bunny</p>
+                                    <p class="thread-date">5 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-main-section">
+                    <div class="main-section-header">
+                        <p class="main-section-title">Bug reports</p>
+                        <i class="fa fa-chevron-down collapse-toggle"></i>
+                    </div>
+                    <div class="main-section-body">
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name">PC bugs</h3>
+                                <p class="category-description">Report bugs related to PC</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">24,152</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Audio keep cutting out</p>
+                                    <p class="thread-poster">51DolbyPlayer</p>
+                                    <p class="thread-date">55 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">XBox bugs</h3>
+                                <p class="category-description">Report bugs related to XBox</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">2,963</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">XBox live?</p>
+                                    <p class="thread-poster">I_Only_Play_Offline</p>
+                                    <p class="thread-date">2 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item">
+                            <div class="category-name">
+                                <h3 class="category-name">PS4 bugs</h3>
+                                <p class="category-description">Report bugs related to PS4</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">1,152</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Crashed multiple times</p>
+                                    <p class="thread-poster">BlueScreenMaster</p>
+                                    <p class="thread-date">31 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-item off-color">
+                            <div class="category-name">
+                                <h3 class="category-name">Nintendo Switch bugs</h3>
+                                <p class="category-description">Report bugs related to the Nintendo Switch</p>
+                            </div>
+                            <div class="category-count">
+                                <h3 class="count-title">3,963</h3>
+                                <p class="count-subtitle">posts</p>
+                            </div>
+                            <div class="category-latest">
+                                <div class="profile-picture"></div>
+                                <div class="thread-detail">
+                                    <p class="thread-name">Switch Lite support?</p>
+                                    <p class="thread-poster">Mario_Is_God</p>
+                                    <p class="thread-date">1 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="col-lg-3 side-bar">
-                <div class="side-bar-section latest-topics"></div>
+                <div class="side-bar-section latest-topics">
+                    <div class="side-section-header">
+                        <p class="side-section-title">Latest topics</p>
+                    </div>
+                    <div class="side-section-body">
+                        <div class="side-section-item">
+                            <div class="profile-picture"></div>
+                            <div class="side-section-detail">
+                                <p class="side-thread-name">Farming Fortuna</p>
+                                <p class="side-thread-poster">By Xbomberman</p>
+                                <p class="side-thread-date">Started 12 minutes ago</p>
+                            </div>
+                            <div class="side-replies">2</div>
+                        </div>
+                        <div class="side-section-item side-off-color">
+                            <div class="profile-picture"></div>
+                            <div class="side-section-detail">
+                                <p class="side-thread-name">New Roadmap?</p>
+                                <p class="side-thread-poster">By Saiky115</p>
+                                <p class="side-thread-date">Started 45 minutes ago</p>
+                            </div>
+                            <div class="side-replies">3</div>
+                        </div>
+                        <div class="side-section-item">
+                            <div class="profile-picture"></div>
+                            <div class="side-section-detail">
+                                <p class="side-thread-name">Noob question?</p>
+                                <p class="side-thread-poster">By New_Asylum</p>
+                                <p class="side-thread-date">Started 1 hour ago</p>
+                            </div>
+                            <div class="side-replies">0</div>
+                        </div>
+                        <div class="side-section-item side-off-color">
+                            <div class="profile-picture"></div>
+                            <div class="side-section-detail">
+                                <p class="side-thread-name">Paragon Hotfix 1.0.0.1</p>
+                                <p class="side-thread-poster">By Paragon</p>
+                                <p class="side-thread-date">Started 2 hour ago</p>
+                            </div>
+                            <div class="side-replies">70</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="side-bar-section hottest-topics"></div>
             </div>
         </div>
     </div>
-      
+    <div class="select-category">
+        <div class="select-category-container">
+            <div class="select-category-header">
+                <h3 class="title">Select Forum</h3>
+                <i class="fa fa-times cancel-posting"></i>
+            </div>
+            <div class="select-category-body">
+                <select name="" id="">
+                    <optgroup label="News">
+                        <option value="">Announcements & Events</option>
+                        <option value="">Developer Workshop & Update Notes</option>
+                        <option value="">Livestreams & Contests</option>
+                    </optgroup>
+                    <optgroup label="Games">
+                        <option value="">Doom</option>
+                        <option value="">Paragon</option>
+                        <option value="">Steep</option>
+                    </optgroup>
+                    <optgroup label="Community">
+                        <option value="">Players helping players</option>
+                        <option value="">General discussion</option>
+                        <option value="">Recruitment</option>
+                        <option value="">Fan Zone</option>
+                    </optgroup>
+                    <optgroup label="Bug Reports">
+                        <option value="">PC bugs</option>
+                        <option value="">XBox bugs</option>
+                        <option value="">PS4 bugs</option>
+                        <option value="">Nintendo Switch bugs</option>
+                    </optgroup>
+                </select>
+                <button class="confirm-button">Continue</button>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>

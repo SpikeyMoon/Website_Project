@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-section-item {
+    margin-bottom: 16px;
+}
+
+.quote-button {
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: none;
+    background: #999;
+    color: #fff;
+    transition: 300ms;
+}
+
+.quote-button.text-button {
+    color: #6d6d6d;
+    background: none!important;
+}
+
+.quote-button.text-button:hover {
+    color: #999;
+}
+
+.quote-button:hover {
+    background: #ddd;
+}
+
+.thread-subtitle {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.thread-title {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.poster-pfp {
+    height: 100px;
+    width: 100px;
+    background: url("../../src/community/onethreadprofilepicture.jpg");
+    background-position: center;
+    background-size: contain;
+    margin: 8px auto;
+}
+
+.poster-name {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.poster-info {
+    flex-basis: 19%;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.poster-info > * {
+    transition: 300ms;
+}
+
+.poster-rep:hover::before {
+    content: "Member's reputation: ";
+    font-size: 12px;
+}
+
+.breadcrumb-container {
+    max-width: 100%!important;
+    width: 100%!important;
+    flex: 100%!important;
+}
+
+.section-question {
+    padding: 8px 8px 16px 8px;
+    background: #999!important;
+}
+
+#replier-1 {
+    background: url("../../src/community/onethreadprofilepicture1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#replier-2 {
+    background: url("../../src/community/onethreadprofilepicture2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.jomith-pfp {
+    background: url("../../src/account/display.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.default-pfp {
+    background: url("../../src/community/onethreadprofilepicture.jpg");
+    background-position: center;
+    background-size: cover;
+}

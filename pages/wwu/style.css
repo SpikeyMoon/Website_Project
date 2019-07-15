@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pluses-title {
+    font-size: 20px;
+}
+
+.responsibility-title {
+    font-size: 20px;
+}
+
+ul {list-style-position: inside;padding-left: 16px;}
+
+ul> li {
+    padding-left: 16px;
+    text-indent: -23px;
+    font-size: 15px;
+}
+
+.requirement-tile {
+    font-size: 20px;
+}
+
+.listing .specification-coloring {
+    color: purple;
+}
+
+.listing-pluses {
+    float: left;
+    width: 100%;
+}
+
+.listing-requirements {
+    float: left;
+}
+
+.listing-responsibilities {
+    float: right;
+}
+
+.listing-title {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%!important;
+    border-bottom: 2px solid purple;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.listing-container {
+    width: 1140px;
+    height: 800px;
+    position: absolute;
+    top: calc(50% - 400px);
+    left: calc(50% - 570px);
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.listing-container > div {
+    max-width: 60%;
+    position: relative;
+    border-bottom: 2px solid purple;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.listing-responsibilities::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -444px;
+    top: 0;
+    background: url(../../src/wwu/after.jpg);
+    height: 100%;
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+}
+
+.listing-requirements::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -444px;
+    top: 0;
+    background: url("../../src/wwu/before.jpg");
+    height: 100%;
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+}
+
+.listing-pluses::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -444px;
+    top: 0;
+    background: url("../../src/wwu/before-2.jpg");
+    height: 100%;
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+}
+
+.listing-title > div {
+    max-width: 51%;
+}
+
+.listing .job-descriptions {
+    flex: 49%;
+    position: absolute;
+    right: 100px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inherit;
+    -webkit-line-clamp: 100;
+    overflow: initial;
+    bottom: 0;
+    margin-bottom: 16px;
+}
+
+.listing {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #00000066;
+    display: none;
+}
+
+.job button {
+    float: right;
+    margin-left: 8px;
+    min-height: 36px;
+    min-width: 64px;
+    border: 1px solid;
+    color: #bbf9d1;
+    background: none;
+    padding: 0 16px;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+.apply-job:hover {
+    background: #800080cc!important;
+}
+
+.learn-more-job:hover {
+    background: #bbf9d1cc;
+}
+
+.apply-job {
+    background: purple!important;
+    color: #ffffff!important;
+    border: 1px solid transparent! important;
+}
+
+.job-descriptions {
+    margin-top: 12px;
+    border-top: 2px solid;
+    padding-top: 4px;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.specification-coloring {
+    color: #bbf9d1;
+}
+
+.job-specification {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.listing .job-specification {
+    flex: 51%;
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: 600;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    border-radius: 8px 0 0 0;
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+.listing .job-title {
+    border: 0;
+    margin: 0 0 16px 0;
+    padding: 0;
+    flex: 51%;
+}
+
+.jobs {background: #00000066;}
+
+.perk-benefit {
+    font-weight: 300;
+    transition: 300ms;
+    transition-delay: 200ms;
+    opacity: 0;
+    transform: translateY(64px);
+}
+
+.perk:hover .perk-benefit {
+    opacity: 1;
+    transform: none;
+}
+
+.perk-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    transition: 300ms;
+    transition-delay: 100ms;
+    transform: translateY(64px);
+}
+
+.perk:hover .perk-name {
+    transform: none;
+}
+
+.perk {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    max-width: calc(25% - 30px);
+    margin: 0 15px;
+    transition: 300ms;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.perk:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 4px #00000066;
+}
+
+.perk-container {
+    background: #ffffff;
+}
+
+.perk-icon {margin-bottom: 16px;filter: saturate();margin-top: 32px;transition: 300ms;transform: translateY(calc(50%));}
+
+.perk:hover .perk-icon {
+    transform: none;
+}
+
+.perk-icon > svg  > path {
+    fill: purple;
+}
+
+.perks {
+    background: #efefef;
+    height: 100%;
+}
+
+.learn-more-button {
+    padding: 4px 16px;
+    font-size: 24px;
+    color: purple;
+    background: none;
+    border-radius: 8px;
+    border: 4px solid purple;
+    margin: 24px auto;
+    transition: 300ms;
+}
+
+.learn-more-button:hover {background: #80008022;}
+
+.sub-title {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.perks .title {
+    margin-bottom: 32px;
+}
+
+.intro {
+    background: #ffffff;
+    height: 35%;
+    box-shadow: 0px -4px 8px 4px #00000066;
+}
+
+.parallax-background {
+    background: url("../../src/wwu/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    filter: hue-rotate(45deg) brightness(0.8);
+    z-index: -1;
+}
+
+.container {
+    height: max-content;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.perks .container {
+    max-width: 1400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.foreground {
+    background: url("../../src/wwu/fg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+.title-reversed {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.job {
+    border-radius: 0 0 8px 0;
+    padding: 16px;
+    text-align: left;
+    max-width: calc(33% - 30px);
+    margin: 0 15px;
+    transition: 300ms;
+    overflow: hidden;
+    margin-bottom: 30px;
+    color: #ffffff;
+    position: relative;
+    /* border-right: 4px solid; */
+    /* border-bottom: 4px solid; */
+}
+
+.jobs .container {
+    max-width: 1400px;
+    position: relative;
+    top: 50%;
+}
