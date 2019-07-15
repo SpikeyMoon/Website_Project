@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.browsing-container.container {
+    margin-bottom: 32px;
+}
+
+ul {
+    padding-left: 32px;
+}
+
+p.feature {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.article-header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#banner-1 {
+    object-position: center!important;
+}

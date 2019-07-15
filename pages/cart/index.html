@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parallax-background"></div>
+    <div class="container">
+        <p class="title">Check out</p>
+        <div class="steps">
+            <div class="step done">Shopping cart</div>
+            <div class="step">Billing Information</div>
+            <div class="step">Verify Order</div>
+            <div class="step">Order Complete</div>
+        </div>
+        <div class="checkout-page">
+            <div class="cart-item">
+                <div class="display-image"></div>
+                <div class="item-title">Paragon: Youngblood (pre-order)</div>
+                <div class="item-price">$59.99</div>
+                <div class="quantity">
+                    <div class="reduce"><i class="fa fa-chevron-left"></i></div>
+                    <span class="quantify"></span>
+                    <div class="add"><i class="fa fa-chevron-right"></i></div>
+                </div>
+                <div class="remove"><i class="fa fa-trash-alt"></i></div>
+            </div>
+            <div class="empty" style="display: none">Your Cart is empty</div>
+            <div class="total">Total: <span class="amount"></span></div>
+            <div class="shopping-button continue-shopping">Continue shopping</div>
+            <div class="shopping-button clear-shopping">Clear order</div>
+            <div class="shopping-button checkout">Proceed to checkout</div>
+        </div>
+        <div class="billing-page" style="">
+            <div class="payment-type">
+                <div class="creditcard-payment">
+                    <input type="radio" name="" id="creditcard">
+                    <img src="../../src/cart/visa.jpg" alt="">
+                </div>
+                <div class="ewallet-payment">
+                    <input type="radio" name="" id="ewallet">
+                    <img src="../../src/cart/paypal.jpg" alt="">
+                </div>
+            </div>
+            <div class="creditcard-pay">
+                <label for="" class="cardholder">Cardholder's name</label>
+                <input type="text" name="" id="cardholder">
+                <label for="" class="cardnumber">Card Number</label>
+                <input type="text" name="" id="cardnumber">
+                <label for="" class="validdate">Valid Until</label>
+                <input type="date" name="" id="validdate">
+                <label for="" class="cvv">CVV</label>
+                <input type="password" name="" id="cvv">
+            </div>
+            <div class="ewallet-pay">
+                    <label for="" class="ewalletemail">Email Address</label>
+                    <input type="email" name="" id="email">
+                    <label for="" class="cvv">Password</label>
+                    <input type="password" name="" id="password">
+                    <button class="login-button">Login</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
