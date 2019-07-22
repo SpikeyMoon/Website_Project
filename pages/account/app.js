@@ -10,18 +10,42 @@ $(document).ready(function () {
 
 
     function save() {
-        if (firstName != "") { localStorage.setItem("firstName", firstName); }
-        else { localStorage.setItem("firstName", "John"); }
-        if (lastName != "") { localStorage.setItem("lastName", lastName); }
-        else { localStorage.setItem("lastName", "Smith") }
-        if (displayName != "") { localStorage.setItem("displayName", displayName); }
-        else { localStorage.setItem("displayName", "Jomith"); }
-        if (emailAdd != "") { localStorage.setItem("emailAdd", emailAdd); }
-        else { localStorage.setItem("emailAdd", "Smith.John@gmail.com"); }
-        if (forumsName != "") { localStorage.setItem("forumsName", forumsName); }
-        { localStorage.setItem("forumsName", "Jomith"); }
-        if (emailAdd != "") { localStorage.setItem("emailAdd", country); }
-        if (language != "") { localStorage.setItem("language", language); }
+        if (firstName != "" && firstName != "null") {
+            localStorage.setItem("firstName", firstName);
+            console.log("why");
+        } else {
+            localStorage.setItem("firstName", "John");
+        }
+        if (lastName != "" && lastName != "null") {
+            localStorage.setItem("lastName", lastName);
+        } else {
+            localStorage.setItem("lastName", "Smith")
+        }
+        if (displayName != "" && displayName != "null") {
+            localStorage.setItem("displayName", displayName);
+        } else {
+            localStorage.setItem("displayName", "Jomith");
+        }
+        if (emailAdd != "" && emailAdd != "null") {
+            localStorage.setItem("emailAdd", emailAdd);
+        } else {
+            localStorage.setItem("emailAdd", "Smith.John@gmail.com");
+        }
+        if (forumsName != "" && forumsName != "null") {
+            localStorage.setItem("forumsName", forumsName);
+        } else {
+            localStorage.setItem("forumsName", "Jomith");
+        }
+        if (country != "" && country != "null") {
+            localStorage.setItem("country", country);
+        } else {
+            localStorage.setItem("country", "Western Europe")
+        }
+        if (language != "" && language != "null") {
+            localStorage.setItem("language", language);
+        } else {
+            localStorage.setItem("language", "English");
+        }
 
     }
 
@@ -31,18 +55,27 @@ $(document).ready(function () {
         displayName = localStorage.getItem("displayName");
         emailAdd = localStorage.getItem("emailAdd");
         forumsName = localStorage.getItem("forumsName");
-        country = localStorage.getItem("emailAdd");
+        country = localStorage.getItem("country");
         language = localStorage.getItem("language");
+
+
+        console.log(localStorage.getItem("firstName"));
+        console.log(localStorage.getItem("lastName"));
+        console.log(localStorage.getItem("displayName"));
+        console.log(localStorage.getItem("emailAdd"));
+        console.log(localStorage.getItem("forumsName"));
+        console.log(localStorage.getItem("emailAdd"));
+        console.log(localStorage.getItem("language"));
     }
 
     function loadToPage() {
-        $("#first-name").text(firstName);
-        $("#last-name").text(lastName);
-        $("email-address").text(emailAdd);
-        $("#display-name").text(displayName);
-        $("#forums-name").text(forumsName);
-        $("#country").text(country);
-        $("#language").text(language);
+        $("#first-name").html(firstName);
+        $("#last-name").html(lastName);
+        $("email-address").html(emailAdd);
+        $("#display-name").html(displayName);
+        $("#forums-name").html(forumsName);
+        $("#country").html(country);
+        $("#language").html(language);
     }
 
     load(); save(); load(); loadToPage();
@@ -132,7 +165,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#redeem-code-button").click(function (e) { 
+    $("#redeem-code-button").click(function (e) {
         e.preventDefault();
         $(".add-code").fadeIn();
     });
@@ -206,12 +239,55 @@ $(document).ready(function () {
         }
     });
 
-    $(".logout-button").click(function (e){
+    $(".logout-button").click(function (e) {
         loggedIn = false;
-        localStorage.setItem("loggedIn", false);
+        localStorage.setItem("loggedIn", loggedIn);
         window.location.replace("../../index.html");
     });
 
+    $(".nav-search").click(function (e) {
+        e.preventDefault();
+        $("#search-overlay").fadeIn();
+    });
+
+    $(".closebtn").click(function (e) {
+        e.preventDefault();
+        $("#search-overlay").fadeOut();
+    });
+
+    $("#search-overlay").click(function (e) {
+        e.preventDefault();
+        if (!$(this).find("*").is(e.target)) {
+            $("#search-overlay").fadeOut();
+        }
+    });
+
+    if (loggedIn == "true") {
+        $(".login-button").addClass("hide");
+        $(".loggedin-person").removeClass("hide");
+        $(".login-mobile").addClass("hide");
+    }
+    if (loggedIn == "false") {
+        $(".login-button").removeClass("hide");
+        $(".loggedin-person").addClass("hide");
+        $(".login-mobile").removeClass("hide");
+    }
+
+    var countries = [
+        { value: 'DOOM', data: 'DO' },
+        { value: 'DOOM Eternal', data: 'DE' },
+        { value: 'PARAGON', data: 'PG' },
+        { value: 'PARAGON:YOUNGBLOOD', data: 'PY' },
+        { value: 'STEEP', data: 'ST' }
+    ];
+
+    $('#search-input').autocomplete({
+        lookup: countries,
+        onSelect: function (suggestion) {
+
+        }
+    });
+    // Menu-ing
     //Toggle the menu
     $(".nav-menu-opener").click(function (e) {
         e.preventDefault();
@@ -231,4 +307,51 @@ $(document).ready(function () {
             $(".nav-menu-opener").removeClass("nav-menu-opener-active");
         }
     });
+
+    $(".logo").click(function (e) {
+        e.preventDefault();
+        window.location = "../../index.html"
+    });
+
+    $(".menu-item-1").click(function (e) {
+        e.preventDefault();
+        window.location = "../game/index.html"
+    });
+
+    $(".menu-item-2").click(function (e) {
+        e.preventDefault();
+        window.location = "../news/index.html"
+    });
+
+    $(".menu-item-3").click(function (e) {
+        e.preventDefault();
+        window.location = "../community/index.html"
+    });
+
+    $(".menu-item-4").click(function (e) {
+        e.preventDefault();
+        window.location = "../wwu/index.html"
+    });
+
+    $(".menu-item-5").click(function (e) {
+        e.preventDefault();
+        window.location = "../store/index.html"
+    });
+
+    $(".nav-cart").click(function (e) {
+        e.preventDefault();
+        window.location = "../cart/index.html"
+    });
+
+    $(".loggedin-person").click(function (e) {
+        e.preventDefault();
+        window.location = "../account/index.html"
+    });
+
+    $(".login-button").click(function (e) {
+        e.preventDefault();
+        window.location = "../../overlay/login.html"
+    });
+
+
 });

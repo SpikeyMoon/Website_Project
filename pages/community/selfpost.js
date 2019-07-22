@@ -14,10 +14,11 @@ $(document).ready(function () {
     console.log(content);
     console.log(loggedIn);
 
-    if (loggedIn) {
+    if (loggedIn == "true") {
         $("#post-title").html(title);
         $("#post-content").html(content);
-    } else {
+    } 
+    if(loggedIn == "false") {
         $(".poster-pfp").removeClass("jomith-pfp");
         $(".poster-pfp").addClass("default-pfp");
 

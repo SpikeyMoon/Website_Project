@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Crysis - 2.1.0.0 patch notes - News - Arachnid Entertainment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,10 +18,103 @@
     <!-- Main page CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="article.css">
-
+    <link rel="stylesheet" href="../../overlay/navbanner.css">
+    <link rel="shortcut icon" href="../../src/logo/logo-img-only.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../default.css">
 </head>
 
 <body>
+    <nav class="nav-banner">
+        <div class="nav-left">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="nav-mid">
+        </div>
+        <div class="nav-right">
+            <div class="login">
+                <button class="login-button">Log in / sign up</button>
+                <div class="login-mobile"><i class="fa fa-sign-in-alt"></i></div>
+                <div class="loggedin-person hide">
+                    <p class="person-name">Jomith</p>
+                    <img src="../../src/account/display.jpg" alt="" class="person-display-pic">
+                </div>
+            </div>
+            <div class="nav-cart"><i class="fa fa-shopping-cart"></i></div>
+            <div class="nav-search"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
+    <div id="search-overlay" class="overlay">
+        <span class="closebtn" title="Close Overlay"><i class="fa fa-times"></i></span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <nav class="navigation-menu">
+        <div class="navigation-top d-flex">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="main-menu w-100">
+            <div class="menu-item menu-item-1">
+                <a href="#" class="menu-title" id="GAMES">GAMES</a>
+                <a href="#" class="menu-sub-item" id="game-1">Doom</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Paragon</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Steep</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Crysis</a>
+                <!-- <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
+                                <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
+                                <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
+                                <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a> -->
+            </div>
+            <div class="menu-item menu-item-2">
+                <a href="#" class="menu-title" id="NEWS">NEWS</a>
+                <a href="#" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
+            </div>
+            <div class="menu-item menu-item-3">
+                <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
+                <a href="#" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
+                <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
+                <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
+            </div>
+            <div class="menu-item menu-item-4">
+                <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
+                <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
+                <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
+            </div>
+            <div class="menu-item menu-item-5">
+                <a href="#" class="menu-title" id="SHOP">SHOP</a>
+                <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
+                <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
+                <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="nav-footer-left">
+                <p class="nav-footer-title">Follow us on</p>
+            </div>
+            <div class="nav-footer-right">
+                <p class="social-media"><i class="fab fa-facebook"></i></p>
+                <p class="social-media"><i class="fab fa-twitter"></i></p>
+                <p class="social-media"><i class="fab fa-discord"></i></p>
+                <p class="social-media"><i class="fab fa-youtube"></i></p>
+            </div>
+        </div>
+    </nav>
 
     <div class="banner-container w-100 h-50 banner-current" id="banner-1">
         <img src="../../src/news/crysis_banner.jpg" alt="" class="banner-background w-100 h-100">
@@ -33,125 +126,184 @@
         <p class="article-header">New challenges, new events, new suits and a lot more firepower</p>
         <p class="feature">Features and improvements</p>
         <ul>
-                <li>Bandit Camps are now replayable! Open your map and select any previously cleared bandit camp to replay them as much as you'd like -- and get rewarded.</li>
-                <li>New Wasteland Wizard Cheat Codes: Low Gravity, Bloody Mess, Phoenix Rejector Seat, Klegg Support. Activate the new cheats in the ‘settings’ menu.</li>
-                <li>New Voice Packs added! Ozzy Man Reviews "You Call That a Wingstick?" and German “TV Fatal”. Activate the new voice packs in the ‘settings’ menu.</li>
-                <li>Wasteland Wizard now only travels to 3 different locations instead of 15.</li>
-                <li>Menu optimization improved to address slowdown issues.</li>
-                <li>Crate Improvements! Improved melee hit detection and increased visibility at night.</li>
-                <li>Improved sharpness on high-res screens to reduce “blurriness”.</li>
-                <li>Adjusted the day/night cycle. (Previously, the day time moved too slow, night time lasted too long).</li>
-                <li>Digital Deluxe Upgrade now available in the in-game Store.</li>
-                <li>Arachnid.net Friend Leaderboards now available for Mutant Bash TV.</li>
-                <li>Fixed issue where linked Arachnid.net accounts appear as unlinked after re-establishing network connection.</li>
+            <li>Bandit Camps are now replayable! Open your map and select any previously cleared bandit camp to replay
+                them as much as you'd like -- and get rewarded.</li>
+            <li>New Wasteland Wizard Cheat Codes: Low Gravity, Bloody Mess, Phoenix Rejector Seat, Klegg Support.
+                Activate the new cheats in the ‘settings’ menu.</li>
+            <li>New Voice Packs added! Ozzy Man Reviews "You Call That a Wingstick?" and German “TV Fatal”. Activate the
+                new voice packs in the ‘settings’ menu.</li>
+            <li>Wasteland Wizard now only travels to 3 different locations instead of 15.</li>
+            <li>Menu optimization improved to address slowdown issues.</li>
+            <li>Crate Improvements! Improved melee hit detection and increased visibility at night.</li>
+            <li>Improved sharpness on high-res screens to reduce “blurriness”.</li>
+            <li>Adjusted the day/night cycle. (Previously, the day time moved too slow, night time lasted too long).
+            </li>
+            <li>Digital Deluxe Upgrade now available in the in-game Store.</li>
+            <li>Arachnid.net Friend Leaderboards now available for Mutant Bash TV.</li>
+            <li>Fixed issue where linked Arachnid.net accounts appear as unlinked after re-establishing network
+                connection.</li>
         </ul>
         <p class="feature">PERFORMANCE AND STABILITY</p>
         <ul>
-                <li>Fixed an issue where weapons, armor, and abilities disappeared after loading a save.</li>
-                <li>Fixed an issue where the PS4 version of the game would hang on the legal screens when attempting to boot the title without a network connection.</li>
-                <li>Fixed an issue where PC players could not access friends, statistics, or the store.</li>
-                <li>Fixed a PC crash that could occur when exiting to the desktop.</li>
-                <li>Fixed a crash that occurred when the player hovered their mouse over a location icon in the map.</li>
-                <li>Fixed a crash that occurred when the player was using the Icarus.</li>
-                <li>Fixed an issue where the title crashed when launching the game using minimum spec hardware.</li>
-                <li>Fixed a crash that occurred when skipping Prowley's cutscenes.</li>
+            <li>Fixed an issue where weapons, armor, and abilities disappeared after loading a save.</li>
+            <li>Fixed an issue where the PS4 version of the game would hang on the legal screens when attempting to boot
+                the title without a network connection.</li>
+            <li>Fixed an issue where PC players could not access friends, statistics, or the store.</li>
+            <li>Fixed a PC crash that could occur when exiting to the desktop.</li>
+            <li>Fixed a crash that occurred when the player hovered their mouse over a location icon in the map.</li>
+            <li>Fixed a crash that occurred when the player was using the Icarus.</li>
+            <li>Fixed an issue where the title crashed when launching the game using minimum spec hardware.</li>
+            <li>Fixed a crash that occurred when skipping Prowley's cutscenes.</li>
         </ul>
         <p class="feature">User Interface</p>
         <ul>
-                <li>Fixed an issue where debug text and symbols were visible in the Settings menu.</li>
-                <li>Fixed an issue where debug text was visible in Reticle Style settings.</li>
-                <li>Fixed an issue where multiple UI elements were in slow motion.</li>
-                <li>Fixed an issue where magazine weapon upgrades text will remain showing on incorrect weapons and after closing menu.</li>
+            <li>Fixed an issue where debug text and symbols were visible in the Settings menu.</li>
+            <li>Fixed an issue where debug text was visible in Reticle Style settings.</li>
+            <li>Fixed an issue where multiple UI elements were in slow motion.</li>
+            <li>Fixed an issue where magazine weapon upgrades text will remain showing on incorrect weapons and after
+                closing menu.</li>
         </ul>
         <p class="feature">Audio & Localization</p>
         <ul>
-                <li>Fixed an issue where character voice lines may infrequently fail to play.</li>
-                <li>Fixed an issue where dialogue lines occasionally do not play any VO or cut off early.</li>
-                <li>Fixed an issue where battle music no longer played after the completion of Blackout.</li>
-                <li>Fixed an issue where music was missing at Winner's Lounge.</li>
-                <li>Fixed an issue where no SFX played when unlocking ability levels or ability perks in the Nanotrites menu.</li>
-                <li>Fixed an issue where skipping the intro cutscene early may stop VO lines in character selection to stop playing.</li>
-                <li>Sound effects are now heard when a motorcycle falls over.</li>
-                <li>Resolved an issue where two separate countdown audio queues played out of sync at the start of race.</li>
-                <li>Sound for "New log entry" HUD no longer missing.</li>
-                <li>Fixed an issue where audio feedback was not heard when the player takes damage from the lasers in Goliath Plant Control Room.</li>
-                <li>Player no longer repeats Hurt VO when touching a Electricity Drop, but isn't damaged.</li>
-                <li>Sound effects for opening the hatches covering the reactor now plays properly at Shrouded Sub Station Alpha.</li>
-                <li>Grenade VFX no longer appear misaligned when user cooks a grenade while moving</li>
-                <li>Smart Rocket Launcher no longer missing VFX when firing in Overdrive</li>
-                <li>Fixed an issue where "Intel Collected" displays debug text when playing in any localized language.</li>
-                <li>Fixed the Japanese date and time localization on Save and Load screens.</li>
-                <li>Fixed the Russian localization for Golden Pistol.</li>
-                <li>All Languages - Log - Description of Polite request to BLOW UP GAZCATRAZ! intel is affected by inconsistency issues.</li>
-                <li>Fixed authority sentry VO distortion in JP SKU.</li>
-                <li>Resolved several localization issues including overlaping text for PTBR, zhTW, zhCN and KO.</li>
-                <li>Resolved broken "Help" hyperlinks in Polish or Brazilian Portuguese.</li>
+            <li>Fixed an issue where character voice lines may infrequently fail to play.</li>
+            <li>Fixed an issue where dialogue lines occasionally do not play any VO or cut off early.</li>
+            <li>Fixed an issue where battle music no longer played after the completion of Blackout.</li>
+            <li>Fixed an issue where music was missing at Winner's Lounge.</li>
+            <li>Fixed an issue where no SFX played when unlocking ability levels or ability perks in the Nanotrites
+                menu.</li>
+            <li>Fixed an issue where skipping the intro cutscene early may stop VO lines in character selection to stop
+                playing.</li>
+            <li>Sound effects are now heard when a motorcycle falls over.</li>
+            <li>Resolved an issue where two separate countdown audio queues played out of sync at the start of race.
+            </li>
+            <li>Sound for "New log entry" HUD no longer missing.</li>
+            <li>Fixed an issue where audio feedback was not heard when the player takes damage from the lasers in
+                Goliath Plant Control Room.</li>
+            <li>Player no longer repeats Hurt VO when touching a Electricity Drop, but isn't damaged.</li>
+            <li>Sound effects for opening the hatches covering the reactor now plays properly at Shrouded Sub Station
+                Alpha.</li>
+            <li>Grenade VFX no longer appear misaligned when user cooks a grenade while moving</li>
+            <li>Smart Rocket Launcher no longer missing VFX when firing in Overdrive</li>
+            <li>Fixed an issue where "Intel Collected" displays debug text when playing in any localized language.</li>
+            <li>Fixed the Japanese date and time localization on Save and Load screens.</li>
+            <li>Fixed the Russian localization for Golden Pistol.</li>
+            <li>All Languages - Log - Description of Polite request to BLOW UP GAZCATRAZ! intel is affected by
+                inconsistency issues.</li>
+            <li>Fixed authority sentry VO distortion in JP SKU.</li>
+            <li>Resolved several localization issues including overlaping text for PTBR, zhTW, zhCN and KO.</li>
+            <li>Resolved broken "Help" hyperlinks in Polish or Brazilian Portuguese.</li>
         </ul>
         <p class="feature">GAMEPLAY BUG FIXES</p>
         <ul>
-                <li>Now possible to change key bindings for the Defibrillation mini-game (previously, it defaulted to WASD).</li>
-                <li>Fixed an issue where Dr. Kvasir's dialogue prompt did not work from certain angles.</li>
-                <li>Fixed several portions of ChazCar where some areas of the course do not teleport the player back to track.</li>
-                <li>Fixed an issue where the Nicholas Raine armor would always be seen on the player.</li>
-                <li>Fixed an issue where signing out after resuming from a suspended state would allow the player to stay in the game, which would corrupt all saves.</li>
-                <li>Fixed an issue where Photo Mode options were missing upon reentering the mode.</li>
-                <li>Fixed an issue where Crushers would get stuck after their intro animation.</li>
-                <li>Fixed an issue where Walker would become invincible by dying and then using slam in the MBTV "The Ranger" challenge.</li>
-                <li>Fixed an issue where Gazcatraz may not be completed after killing all enemies.</li>
-                <li>Fixed an issue where it was not possible to steer right with motorcycles if you changed the keybinding to any key except the default key.</li>
-                <li>Fixed a crash that occured when fighting an Authority Sentry north of Lagooney.</li>
-                <li>Fixed an issue where creating a new save and quitting to the main menu during Gulo's speech would cause Marshall not to radio the player, blocking progression.</li>
-                <li>Fixed an issue where some story locations with no collectibles could not be marked as completed.</li>
-                <li>Fixed an issue where the Phoenix did not respawn when coming within reach of it (around 200m) on Xbox One.</li>
-                <li>Fixed an issue where the Annihilator did not fit correctly inside the location.</li>
-                <li>Fixed an issue with the Wingstick Lock-on control description button icon.</li>
-                <li>Fixed an issue where a player's friends list on Steam was failing to show added friends for some players.</li>
-                <li>Fixed an issue where the vehicle, bikes, and helicopter keybindings conflicted with each other.</li>
-                <li>Fixed an issue where changing the minimum resolution scale after switching window mode would result in graphical corruption.</li>
-                <li>Fixed an issue where touching the barrier when encountering General Cross would result in the player becoming stuck on the wall.</li>
-                <li>Fixed an issue where the wall near the "Cult of the Death God" cave entrance and exit door may pull and clip the player through the wall.</li>
-                <li>Fixed an issue where the Charged Pulse Cannon would appear invisible when opening the Ark.</li>
-                <li>Fixed an issue where engaging the mutant worshipers from the grate overlooking the shrine caused them to become stuck running into wall.</li>
-                <li>Fixed an issue where the player would be unable to Fast Travel or spawn vehicles upon completion of Authority Bunker section of The Signal.</li>
-                <li>Fixed an issue where the player could activate Focus oriented objects at an awkward angle and/or without looking directly at them.</li>
-                <li>Fixed an issue where the player was able to trigger purchase confirmation prompts on previously bought items.</li>
-                <li>Fixed an issue where the Charged Pulse Cannon model was missing when it was revealed to the player for pick up.</li>
-                <li>Fixed a Arachnid.net issue where the player could become control locked by opening the manage account modal and starting a new game simultaneously.</li>
-                <li>Fixed an issue where the player could become stuck if they progress to the exit door before completing the Ark at Quake Hill.</li>
-                <li>Fixed an issue where the player was unable to change menu navigation keys leading to conflicts when rebinding keys.</li>
-                <li>Fixed an issue where the Dash ability did not make a sound when used.</li>
-                <li>Fixed an issue where loading an autosave made after completing an ark causes objective to not complete and rewards not to be given.</li>
-                <li>Fixed an issue where winning ChazCar derby mission registered as a loss and blocked progression.</li>
-                <li>Fixed an issue where the Abadon Crusher would "morph" into a ball when transitioning from one animation to another when the player approaches.</li>
-                <li>Fixed an issue that automatically cancelled error messages when failing to log in.</li>
-                <li>Fixed an issue where hitting the Phoenix with a vehicle near the city entrances causes vehicle to disappear before being stored.</li>
-                <li>Resolved flickering shadows that occured inside building at D and D's Hood.</li>
-                <li>Fixed an issue where the title would freeze if player attempts to delete or overwrite saves.</li>
-                <li>Entering Eden Space Center at night no longer makes rooms incredibly dark.</li>
-                <li>Fixed an issue where abandoning Project Dagger and restarting it with another car prevents the player from entering the Xerxes.</li>
-                <li>Convoy Locator no longer always shows Convoys on Compass including when Capture and Control are hidden on map.</li>
-                <li>Fixed an issue where when exiting a location where the sun is disabled, there is a pop in lighting.</li>
-                <li>Fixed an issue where if a player is signing into a linked account with expired legal agreements, they will be blocked from accessing the Arachnid.net module.</li>
-                <li>Player will now receive an error message if they try to connect to a Arachnid.net account that is already linked.</li>
-                <li>Player will no longer appear unlinked to Arachnid.net after constraining or suspending multiple times.</li>
-                <li>Fixed an issue where location tracking UI text wouldn't update when selecting or deselecting Track Location.</li>
-                <li>Fixed an issue where the camera angle transition was too harsh when operating vehicles.</li>
-                <li>Fixed an issue where if the player runs out of the elevator as it ascends in the secret bunker, it leaves them stuck.</li>
-                <li>Shadow flickering no longer present on light transitions on PlayStation 4.</li>
-                <li>Fixed an issue where non-standard game modes in MBTV showed player without Ranger Armor.</li>
-                <li>Fixed missing controller vibration with the Phoenix Blast upgrade.</li>
-                <li>Fixed an issue where the Combat Shotgun ammo display was inconsistent between Scattershot and Slug Shot modes.</li>
-                <li>Fixed a UI issue with the incorrect display of a Reward Popup.</li>
-                <li>Camera no longer shakes violently when grabbing on to tall ledges.</li>
-                <li>Player can no longer go out of the world using Grav Jump and Vortex during MBTV.</li>
-                <li>Fixed an issue where the Predator Tank is almost destroyed after player loads back in from dying in it.</li>
-                <li>Fixed an issue where hovering over EASY with the mouse, the player can't use arrow keys to select another difficulty option.</li>
-                <li>Fixed an issue where opponent vehicles sometimes get teleported ahead of the player.</li>
-                <li>Navigation Tool for the Map no longer breaks after completing a race.</li>
-                <li>Fixed an issue where Firestorm Revolver bullets would not stick to props.</li>
-                <li>Fixed an issue where Doomsayer Peak may not be completed after killing all enemies.</li>
-                <li>Fixed an issue where sometimes the player is unable to finish "Yeoman Growery" location due to the fact that not all enemies spawn.</li>
+            <li>Now possible to change key bindings for the Defibrillation mini-game (previously, it defaulted to WASD).
+            </li>
+            <li>Fixed an issue where Dr. Kvasir's dialogue prompt did not work from certain angles.</li>
+            <li>Fixed several portions of ChazCar where some areas of the course do not teleport the player back to
+                track.</li>
+            <li>Fixed an issue where the Nicholas Raine armor would always be seen on the player.</li>
+            <li>Fixed an issue where signing out after resuming from a suspended state would allow the player to stay in
+                the game, which would corrupt all saves.</li>
+            <li>Fixed an issue where Photo Mode options were missing upon reentering the mode.</li>
+            <li>Fixed an issue where Crushers would get stuck after their intro animation.</li>
+            <li>Fixed an issue where Walker would become invincible by dying and then using slam in the MBTV "The
+                Ranger" challenge.</li>
+            <li>Fixed an issue where Gazcatraz may not be completed after killing all enemies.</li>
+            <li>Fixed an issue where it was not possible to steer right with motorcycles if you changed the keybinding
+                to any key except the default key.</li>
+            <li>Fixed a crash that occured when fighting an Authority Sentry north of Lagooney.</li>
+            <li>Fixed an issue where creating a new save and quitting to the main menu during Gulo's speech would cause
+                Marshall not to radio the player, blocking progression.</li>
+            <li>Fixed an issue where some story locations with no collectibles could not be marked as completed.</li>
+            <li>Fixed an issue where the Phoenix did not respawn when coming within reach of it (around 200m) on Xbox
+                One.</li>
+            <li>Fixed an issue where the Annihilator did not fit correctly inside the location.</li>
+            <li>Fixed an issue with the Wingstick Lock-on control description button icon.</li>
+            <li>Fixed an issue where a player's friends list on Steam was failing to show added friends for some
+                players.</li>
+            <li>Fixed an issue where the vehicle, bikes, and helicopter keybindings conflicted with each other.</li>
+            <li>Fixed an issue where changing the minimum resolution scale after switching window mode would result in
+                graphical corruption.</li>
+            <li>Fixed an issue where touching the barrier when encountering General Cross would result in the player
+                becoming stuck on the wall.</li>
+            <li>Fixed an issue where the wall near the "Cult of the Death God" cave entrance and exit door may pull and
+                clip the player through the wall.</li>
+            <li>Fixed an issue where the Charged Pulse Cannon would appear invisible when opening the Ark.</li>
+            <li>Fixed an issue where engaging the mutant worshipers from the grate overlooking the shrine caused them to
+                become stuck running into wall.</li>
+            <li>Fixed an issue where the player would be unable to Fast Travel or spawn vehicles upon completion of
+                Authority Bunker section of The Signal.</li>
+            <li>Fixed an issue where the player could activate Focus oriented objects at an awkward angle and/or without
+                looking directly at them.</li>
+            <li>Fixed an issue where the player was able to trigger purchase confirmation prompts on previously bought
+                items.</li>
+            <li>Fixed an issue where the Charged Pulse Cannon model was missing when it was revealed to the player for
+                pick up.</li>
+            <li>Fixed a Arachnid.net issue where the player could become control locked by opening the manage account
+                modal and starting a new game simultaneously.</li>
+            <li>Fixed an issue where the player could become stuck if they progress to the exit door before completing
+                the Ark at Quake Hill.</li>
+            <li>Fixed an issue where the player was unable to change menu navigation keys leading to conflicts when
+                rebinding keys.</li>
+            <li>Fixed an issue where the Dash ability did not make a sound when used.</li>
+            <li>Fixed an issue where loading an autosave made after completing an ark causes objective to not complete
+                and rewards not to be given.</li>
+            <li>Fixed an issue where winning ChazCar derby mission registered as a loss and blocked progression.</li>
+            <li>Fixed an issue where the Abadon Crusher would "morph" into a ball when transitioning from one animation
+                to another when the player approaches.</li>
+            <li>Fixed an issue that automatically cancelled error messages when failing to log in.</li>
+            <li>Fixed an issue where hitting the Phoenix with a vehicle near the city entrances causes vehicle to
+                disappear before being stored.</li>
+            <li>Resolved flickering shadows that occured inside building at D and D's Hood.</li>
+            <li>Fixed an issue where the title would freeze if player attempts to delete or overwrite saves.</li>
+            <li>Entering Eden Space Center at night no longer makes rooms incredibly dark.</li>
+            <li>Fixed an issue where abandoning Project Dagger and restarting it with another car prevents the player
+                from entering the Xerxes.</li>
+            <li>Convoy Locator no longer always shows Convoys on Compass including when Capture and Control are hidden
+                on map.</li>
+            <li>Fixed an issue where when exiting a location where the sun is disabled, there is a pop in lighting.</li>
+            <li>Fixed an issue where if a player is signing into a linked account with expired legal agreements, they
+                will be blocked from accessing the Arachnid.net module.</li>
+            <li>Player will now receive an error message if they try to connect to a Arachnid.net account that is
+                already linked.</li>
+            <li>Player will no longer appear unlinked to Arachnid.net after constraining or suspending multiple times.
+            </li>
+            <li>Fixed an issue where location tracking UI text wouldn't update when selecting or deselecting Track
+                Location.</li>
+            <li>Fixed an issue where the camera angle transition was too harsh when operating vehicles.</li>
+            <li>Fixed an issue where if the player runs out of the elevator as it ascends in the secret bunker, it
+                leaves them stuck.</li>
+            <li>Shadow flickering no longer present on light transitions on PlayStation 4.</li>
+            <li>Fixed an issue where non-standard game modes in MBTV showed player without Ranger Armor.</li>
+            <li>Fixed missing controller vibration with the Phoenix Blast upgrade.</li>
+            <li>Fixed an issue where the Combat Shotgun ammo display was inconsistent between Scattershot and Slug Shot
+                modes.</li>
+            <li>Fixed a UI issue with the incorrect display of a Reward Popup.</li>
+            <li>Camera no longer shakes violently when grabbing on to tall ledges.</li>
+            <li>Player can no longer go out of the world using Grav Jump and Vortex during MBTV.</li>
+            <li>Fixed an issue where the Predator Tank is almost destroyed after player loads back in from dying in it.
+            </li>
+            <li>Fixed an issue where hovering over EASY with the mouse, the player can't use arrow keys to select
+                another difficulty option.</li>
+            <li>Fixed an issue where opponent vehicles sometimes get teleported ahead of the player.</li>
+            <li>Navigation Tool for the Map no longer breaks after completing a race.</li>
+            <li>Fixed an issue where Firestorm Revolver bullets would not stick to props.</li>
+            <li>Fixed an issue where Doomsayer Peak may not be completed after killing all enemies.</li>
+            <li>Fixed an issue where sometimes the player is unable to finish "Yeoman Growery" location due to the fact
+                that not all enemies spawn.</li>
         </ul>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+            <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+        </div>
+        <div class="certificates">
+            <img src="../../src/certificates/1.gif" alt="" class="cert">
+            <img src="../../src/certificates/2.jpg" alt="" class="cert">
+        </div>
+        <div class="copy-right">© 2019 Arachnid Softworks LLC. Trademarks belong to their respective owners. All Rights
+            Reserved.</div>
+
     </div>
 
     <!-- Optional JavaScript -->
@@ -165,7 +317,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="article.js"></script>
+    <script src="../../jquery.autocomplete.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

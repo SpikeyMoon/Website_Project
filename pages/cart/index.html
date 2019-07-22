@@ -2,19 +2,116 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Your cart - Arachnid Entertainment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../overlay/navbanner.css">
+    <link rel="shortcut icon" href="../../src/logo/logo-img-only.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../default.css">
 </head>
 
 <body>
+    <nav class="nav-banner">
+        <div class="nav-left">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="nav-mid">
+        </div>
+        <div class="nav-right">
+            <div class="login">
+                <button class="login-button">Log in / sign up</button>
+                <div class="login-mobile"><i class="fa fa-sign-in-alt"></i></div>
+                <div class="loggedin-person hide">
+                    <p class="person-name">Jomith</p>
+                    <img src="../../src/account/display.jpg" alt="" class="person-display-pic">
+                </div>
+            </div>
+            <div class="nav-cart"><i class="fa fa-shopping-cart"></i></div>
+            <div class="nav-search"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
+    <div id="search-overlay" class="overlay">
+        <span class="closebtn" title="Close Overlay"><i class="fa fa-times"></i></span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <nav class="navigation-menu">
+        <div class="navigation-top d-flex">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="main-menu w-100">
+            <div class="menu-item menu-item-1">
+                <a href="#" class="menu-title" id="GAMES">GAMES</a>
+                <a href="#" class="menu-sub-item" id="game-1">Doom</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Paragon</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Steep</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Crysis</a>
+                <!-- <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
+                        <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
+                        <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
+                        <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a> -->
+            </div>
+            <div class="menu-item menu-item-2">
+                <a href="#" class="menu-title" id="NEWS">NEWS</a>
+                <a href="#" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
+            </div>
+            <div class="menu-item menu-item-3">
+                <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
+                <a href="#" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
+                <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
+                <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
+            </div>
+            <div class="menu-item menu-item-4">
+                <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
+                <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
+                <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
+            </div>
+            <div class="menu-item menu-item-5">
+                <a href="#" class="menu-title" id="SHOP">SHOP</a>
+                <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
+                <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
+                <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="nav-footer-left">
+                <p class="nav-footer-title">Follow us on</p>
+            </div>
+            <div class="nav-footer-right">
+                <p class="social-media"><i class="fab fa-facebook"></i></p>
+                <p class="social-media"><i class="fab fa-twitter"></i></p>
+                <p class="social-media"><i class="fab fa-discord"></i></p>
+                <p class="social-media"><i class="fab fa-youtube"></i></p>
+            </div>
+        </div>
+    </nav>
+
     <div class="parallax-background"></div>
     <div class="container">
         <p class="title">Check out</p>
@@ -24,7 +121,7 @@
             <div class="step">Verify Order</div>
             <div class="step">Order Complete</div>
         </div>
-        <div class="checkout-page">
+        <div class="default checkout-page">
             <div class="cart-item">
                 <div class="display-image"></div>
                 <div class="item-title">Paragon: Youngblood (pre-order)</div>
@@ -38,14 +135,16 @@
             </div>
             <div class="empty" style="display: none">Your Cart is empty</div>
             <div class="total">Total: <span class="amount"></span></div>
-            <div class="shopping-button continue-shopping">Continue shopping</div>
-            <div class="shopping-button clear-shopping">Clear order</div>
-            <div class="shopping-button checkout">Proceed to checkout</div>
+            <div class="action-buttons">
+                <div class="shopping-button continue-shopping">Continue shopping</div>
+                <div class="shopping-button clear-shopping">Clear order</div>
+                <div class="shopping-button checkout">Proceed to checkout</div>
+            </div>
         </div>
-        <div class="billing-page" style="">
+        <div class="default billing-page" style="display: none;">
             <div class="payment-type">
                 <div class="creditcard-payment">
-                    <input type="radio" name="" id="creditcard">
+                    <input type="radio" name="" id="creditcard" checked>
                     <img src="../../src/cart/visa.jpg" alt="">
                 </div>
                 <div class="ewallet-payment">
@@ -53,24 +152,129 @@
                     <img src="../../src/cart/paypal.jpg" alt="">
                 </div>
             </div>
-            <div class="creditcard-pay">
-                <label for="" class="cardholder">Cardholder's name</label>
-                <input type="text" name="" id="cardholder">
-                <label for="" class="cardnumber">Card Number</label>
-                <input type="text" name="" id="cardnumber">
-                <label for="" class="validdate">Valid Until</label>
-                <input type="date" name="" id="validdate">
-                <label for="" class="cvv">CVV</label>
-                <input type="password" name="" id="cvv">
+            <div class="creditcard-pay pay-height">
+                <form>
+
+                    <div class="payrow">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="far fa-address-card"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-university"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fab fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                            <div class="payrow">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
             </div>
-            <div class="ewallet-pay">
-                    <label for="" class="ewalletemail">Email Address</label>
-                    <input type="email" name="" id="email">
-                    <label for="" class="cvv">Password</label>
-                    <input type="password" name="" id="password">
-                    <button class="login-button">Login</button>
+            <div class="ewallet-pay pay-height">
+                <div class="col-50">
+                    <label for="" class="ewalletemail"><i class="fa fa-envelope"></i> Email Address</label>
+                    <input type="email" name="" id="email" placeholder="john@example.com">
+                    <label for="" class="cvv"><i class="fa fa-key"></i> Password</label>
+                    <input type="password" name="" id="password" placeholder="************">
+                    <button class="e-login-button">Login</button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="shopping-button previous-step" style="display: none">Back</button>
+                <button class="shopping-button next-step">Next</button>
             </div>
         </div>
+        <div class="default verify-page" style="display: none;">
+            <div class="cart-item">
+                <div class="display-image"></div>
+                <div class="item-title">Paragon: Youngblood (pre-order)</div>
+                <div class="item-price" style="text-align: right;">$59.99</div>
+                <div class="quantity" style="text-align: right;display: block;margin-right: 16px;">
+                    <div class="reduce" style="display: none;"><i class="fa fa-chevron-left"></i></div>
+                    <span class="quantify">1</span>
+                    <div class="add" style="display: none;"><i class="fa fa-chevron-right"></i></div>
+                </div>
+                <div class="remove" style="display: none;"><i class="fa fa-trash-alt"></i></div>
+            </div>
+            <div class="total">Total: <span class="amount">$59.99</span></div>
+            <div class="payment-method">
+                <p class="method-title">Payment method:</p>
+                <div class="creditcard-method" style="display: none;">Visa ending with **<span
+                        class="end-numbers"></span></div>
+                <div class="ewallet-method" style="display: none;">Paypal account</div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="shopping-button previous-step" style="display: none">Back</button>
+                <button class="shopping-button next-step">Next</button>
+            </div>
+        </div>
+        <div class="default order-complete" style="display: none;">
+            <h3 class="order-complete">Order complete!</h3>
+            <p class="complete-message">We've sent you a verification email to your account. Follow the steps in the
+                email to continue to your download.<br> Thank you for shopping with us.</p>
+            <div class="action-buttons">
+                <div class="shopping-button back-to-main-site">Home</div>
+                <div class="shopping-button continue-shopping">Continue shopping</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+            <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+        </div>
+        <div class="certificates">
+            <img src="../../src/certificates/1.gif" alt="" class="cert">
+            <img src="../../src/certificates/2.jpg" alt="" class="cert">
+        </div>
+        <div class="copy-right">© 2019 Arachnid Softworks LLC. Trademarks belong to their respective owners. All Rights
+            Reserved.</div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -83,6 +287,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../../jquery.autocomplete.js"></script>
     <script src="app.js"></script>
 </body>
 

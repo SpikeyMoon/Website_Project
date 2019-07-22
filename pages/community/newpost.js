@@ -5,7 +5,7 @@ $(document).ready(function () {
     var loggedIn = false;
 
     loggedIn = localStorage.getItem("loggedIn");
-    if (loggedIn) {
+    if (loggedIn == "true") {
         $("#new-post-email").fadeOut();
     }
 

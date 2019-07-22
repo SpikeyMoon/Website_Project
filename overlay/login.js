@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var emailValid = false;
     var signupEmailValid = false;
+    var loggedIn = false;
     function validateEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
@@ -16,8 +17,26 @@ $(document).ready(function () {
             alert("Your credentials are incorrect, please try again");
         } else {
             if($("#login-password").val().length > 0) {
+                loggedIn = true;
+                localStorage.setItem("loggedIn", loggedIn);
+                console.log(localStorage.getItem("loggedIn"));
                 alert("Login successful!");
+                window.history.back();
             }
+        }
+
+    });
+
+    $(".forgot-password").click(function (e) {
+        e.preventDefault();
+        var email = $("#login-email").val();
+
+        emailValid = validateEmail(email);
+
+        if (!emailValid) {
+            alert("Please enter your email address");
+        } else {
+            alert("A password reset request has been sent, please check your inbox at " + email + " to continue.");
         }
 
     });
@@ -84,7 +103,12 @@ $(document).ready(function () {
 
     $(".create-account-button").click(function (e) {
         e.preventDefault();
+        alert("Account creation succeeded, a confirmation email has been sent, please check your inbox.");
         window.location = "../index.html";
     });
 
+    $(".close-window").click(function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
 });

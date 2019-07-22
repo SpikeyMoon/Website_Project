@@ -3,6 +3,89 @@
     margin: 0;
 }
 
+h3.order-complete {
+    padding-top: 25%;
+}
+
+p.complete-message {
+    line-height: 24px;
+    font-size: 20px;
+    max-width: 60%;
+    left: 20%;
+    position: relative;
+}
+
+.verify-page {
+    position: relative;
+}
+
+p.method-title {
+    font-size: 24px;
+    width: max-content;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+}
+
+.e-login-button {
+    padding: 4px 16px;
+    background: #9b27af;
+    color: white;
+    border: none;
+    min-width: 64px;
+    min-height: 36px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 25%;
+}
+
+.ewallet-pay {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex: 80%;
+    /* margin-left: 16px; */
+    margin-bottom: 32px;
+}
+
+input#password {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+input#email {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.payrow h3 {
+    font-size: 24px;
+}
+
+.creditcard-pay {
+    flex: 80%;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+.cardholder {
+    width: 20%;
+}
+
+.billing-page {
+    display: flex;
+}
+
 .payment-type input {
     display: none;
 }
@@ -12,6 +95,10 @@
     height: 300px;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    flex: 20%;
+    max-width: 20%;
+    min-width: 20%;
 }
 
 .payment-type > div {
@@ -57,10 +144,21 @@
 
 .shopping-button.continue-shopping {
     margin-left: 16px;
+    background: #9b27af;
+    color: white;
+}
+
+.order-complete .action-buttons {
+    position: relative;
+    top: 16px;
+}
+
+.order-complete button {
+    position: relative;
 }
 
 .shopping-button.continue-shopping:hover {
-    background: purple;
+    background: #69007f;
     color: #fff;
 }
 
@@ -70,8 +168,8 @@
     width: max-content;
     min-height: 36px;
     display: inline-block;
-    border-color: purple;
-    color: purple;
+    border-color: #9b27af;
+    color: #9b27af;
     border-radius: 4px;
     margin-bottom: 16px;
     transition: 300ms;
@@ -79,14 +177,29 @@
     margin-top: 8px;
 }
 
+.back-to-main-site:hover {
+    color: white;
+    background: #9b27af;
+}
+
+.next-step {
+    background: #9b27af;
+    color: white;
+    float: right;
+}
+
+.next-step:hover {
+    background: #69007f;
+}
+
 .shopping-button.checkout {
     float: right;
-    background: purple;
+    background: #9b27af;
     color: #fff;
 }
 
 .shopping-button.checkout:hover {
-    background: #4e004e;
+    background: #69007f;
 }
 
 
@@ -196,14 +309,15 @@
 }
 
 .done {
-    background: purple;
+    background: #9b27af;
     color: #fff;
 }
 
 .container {
     width: 1400px;
     background: #efefef;
-    margin-top: 32px;
+    margin-top: 84px;
+    margin-bottom: 32px;
 }
 
 .parallax-background {
@@ -223,3 +337,77 @@
 body, html {
     height: 100%;
 }
+/*  */
+
+.payrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+
+.ewallet-pay .col-50 {
+    width: 50%;
+    max-width: 50%;
+}
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  .default {
+    min-height: 80vh;
+    position: relative;
+  }
+
+.default.order-complete {
+    text-align: center;
+}
+
+  .pay-height {
+      height: 60vh;
+  }

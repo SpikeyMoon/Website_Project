@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Crysis - Arachnid Entertainment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,28 +19,126 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../overlay/navbanner.css">
+    <link rel="shortcut icon" href="../../src/logo/logo-img-only.png" type="image/x-icon">
 </head>
 
 <body>
+    <nav class="nav-banner">
+        <div class="nav-left">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="nav-mid">
+        </div>
+        <div class="nav-right">
+            <div class="login">
+                <button class="login-button">Log in / sign up</button>
+                <div class="login-mobile"><i class="fa fa-sign-in-alt"></i></div>
+                <div class="loggedin-person hide">
+                    <p class="person-name">Jomith</p>
+                    <img src="../../src/account/display.jpg" alt="" class="person-display-pic">
+                </div>
+            </div>
+            <div class="nav-cart"><i class="fa fa-shopping-cart"></i></div>
+            <div class="nav-search"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
+    <div id="search-overlay" class="overlay">
+        <span class="closebtn" title="Close Overlay"><i class="fa fa-times"></i></span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <nav class="navigation-menu">
+        <div class="navigation-top d-flex">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="main-menu w-100">
+            <div class="menu-item menu-item-1">
+                <a href="#" class="menu-title" id="GAMES">GAMES</a>
+                <a href="#" class="menu-sub-item" id="game-1">Crysis</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Paragon</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Steep</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Crysis</a>
+                <!-- <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
+                                <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
+                                <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
+                                <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a> -->
+            </div>
+            <div class="menu-item menu-item-2">
+                <a href="#" class="menu-title" id="NEWS">NEWS</a>
+                <a href="#" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
+            </div>
+            <div class="menu-item menu-item-3">
+                <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
+                <a href="#" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
+                <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
+                <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
+            </div>
+            <div class="menu-item menu-item-4">
+                <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
+                <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
+                <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
+            </div>
+            <div class="menu-item menu-item-5">
+                <a href="#" class="menu-title" id="SHOP">SHOP</a>
+                <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
+                <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
+                <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="nav-footer-left">
+                <p class="nav-footer-title">Follow us on</p>
+            </div>
+            <div class="nav-footer-right">
+                <p class="social-media"><i class="fab fa-facebook"></i></p>
+                <p class="social-media"><i class="fab fa-twitter"></i></p>
+                <p class="social-media"><i class="fab fa-discord"></i></p>
+                <p class="social-media"><i class="fab fa-youtube"></i></p>
+            </div>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <picture>
-            <source media="(min-width: 960px)" srcset="../../src/game/background.webp">
-            <source media="(max-width: 959.9999px)" srcset="../../src/game/background.webp">
-            <img src="../../src/game/background.webp" alt="" srcset="">
+            <!-- <source media="(min-width: 960px)" srcset="../../src/game/background.webp">
+            <source media="(max-width: 959.9999px)" srcset="../../src/game/background.webp"> -->
+            <img src="../../src/game/bg.jpg" alt="" srcset="">
         </picture>
-        <button class="trailer-button"><i class="fa fa-play"></i> <span>WATCH THE E3 TRAILER</span></button>
-        <button class="buy-button">PRE-ORDER NOW</button>
+        <div class="button-wrapper">
+            <button class="trailer-button"><i class="fa fa-play"></i> <span>WATCH THE E3 TRAILER</span></button>
+            <button class="buy-button">PRE-ORDER NOW</button>
+        </div>
     </div>
     <div class="intro">
         <img src="../../src/game/introbg.jpg" alt="" class="intro-bg">
         <h1 class="intro-title">RAZE HELL ON NOVEMBER 22, 2019</h1>
-        <p class="descriptions">Developed by id Software, DOOM® Eternal™ is the direct sequel to DOOM®, winner of The
+        <p class="descriptions">Developed by id Software, Crysis® Eternal™ is the direct sequel to Crysis®, winner of
+            The
             Game Awards’ Best Action Game of 2016. Experience the ultimate combination of speed and power as you
             rip-and-tear your way across dimensions with the next leap in push-forward, first-person combat. Powered by
-            idTech 7 and set to an all-new pulse-pounding soundtrack composed by Mick Gordon, DOOM Eternal puts you in
-            control of the unstoppable DOOM Slayer as you blow apart new and classic demons with powerful weapons in
+            idTech 7 and set to an all-new pulse-pounding soundtrack composed by Mick Gordon, Crysis Eternal puts you in
+            control of the unstoppable Crysis Slayer as you blow apart new and classic demons with powerful weapons in
             unbelievable and never-before-seen worlds.</p>
-        <p class="descriptions">As the DOOM Slayer, you return to find Earth has suffered a demonic invasion. Raze Hell
+        <p class="descriptions">As the Crysis Slayer, you return to find Earth has suffered a demonic invasion. Raze
+            Hell
             and discover the Slayer’s origins and his enduring mission to rip and tear…until it is done.</p>
     </div>
     <div class="news-and-updates">
@@ -51,36 +149,36 @@
                     <img src="../../src/game/newscard-1.jpg" alt="" class="news-image">
                     <div class="scrim"></div>
                     <p class="news-type"><i class="fa fa-play"></i> VIDEO</p>
-                    <p class="news-title">DOOM Eternal – Official E3 Story Trailer</p>
-                    <p class="news-time">DOOM ETERNAL - JUNE 9</p>
+                    <p class="news-title">Crysis Eternal – Official E3 Story Trailer</p>
+                    <p class="news-time">Crysis ETERNAL - JUNE 9</p>
                 </div>
                 <div class="nu-video nu-big col-lg-6">
-                    <img src="" alt="" class="news-image">
+                    <img src="../../src/game/newscard-2.jpg" alt="" class="news-image">
                     <div class="scrim"></div>
                     <p class="news-type"><i class="fa fa-play"></i> VIDEO</p>
-                    <p class="news-title">DOOM Eternal – BATTLEMODE Multiplayer Teaser</p>
-                    <p class="news-time">DOOM ETERNAL - JUNE 6</p>
+                    <p class="news-title">Crysis Eternal – BATTLEMODE Multiplayer Teaser</p>
+                    <p class="news-time">Crysis ETERNAL - JUNE 6</p>
                 </div>
                 <div class="nu-news nu-small col-lg-3">
-                    <img src="" alt="" class="news-image">
+                    <img src="../../src/game/newscard-3.png" alt="" class="news-image">
                     <div class="scrim"></div>
                     <p class="news-type"><i class="fa fa-calendar-alt"></i> NEWS</p>
-                    <p class="news-title">Celebrate 25 years of DOOM</p>
-                    <p class="news-time">DOOM ETERNAL - DEC 10</p>
+                    <p class="news-title">Celebrate 25 years of Crysis</p>
+                    <p class="news-time">Crysis ETERNAL - DEC 10</p>
                 </div>
                 <div class="nu-video nu-big col-lg-6">
-                    <img src="" alt="" class="news-image">
+                    <img src="../../src/game/newscard-4.jpg" alt="" class="news-image">
                     <div class="scrim"></div>
                     <p class="news-type"><i class="fa fa-play"></i> VIDEO</p>
                     <p class="news-title">25th Anniversary Trailer</p>
-                    <p class="news-time">DOOM ETERNAL - June 6th</p>
+                    <p class="news-time">Crysis ETERNAL - June 6th</p>
                 </div>
                 <div class="nu-news nu-big col-lg-6">
-                    <img src="" alt="" class="news-image">
+                    <img src="../../src/game/newscard-5.jpg" alt="" class="news-image">
                     <div class="scrim"></div>
                     <p class="news-type"><i class="fa fa-calendar-alt"></i> NEWS</p>
-                    <p class="news-title">DOOM Eternal – Official Gameplay Trailer</p>
-                    <p class="news-time">DOOM ETERNAL - AUG 10</p>
+                    <p class="news-title">Crysis Eternal – Official Gameplay Trailer</p>
+                    <p class="news-time">Crysis ETERNAL - AUG 10</p>
                 </div>
             </div>
         </div>
@@ -88,10 +186,10 @@
     </div>
     <div class="whatsnew">
         <div class="slide">
-            <img src="../../src/game/slide-1.webp" alt="" class="slide-image">
+            <img src="../../src/game/media-1.jpg" alt="" class="slide-image">
             <h3 class="slide-title">Slayer Threat Level at Maximum</h3>
-            <p class="slide-info">Gain access to the latest demon-killing tech with the DOOM Slayer’s advanced Praetor
-                Suit, including a shoulder-mounted flamethrower and the retractable wrist-mounted DOOM Blade. Upgraded
+            <p class="slide-info">Gain access to the latest demon-killing tech with the Crysis Slayer’s advanced Praetor
+                Suit, including a shoulder-mounted flamethrower and the retractable wrist-mounted Crysis Blade. Upgraded
                 guns and mods, such as the Super Shotgun’s new distance-closing Meat Hook attachment, and abilities like
                 the Double Dash make you faster, stronger, and more versatile than ever.</p>
         </div>
@@ -105,32 +203,64 @@
             <h3 class="title">MEDIA</h3>
             <div class="row">
                 <div class="screenshot nu-small col-lg-3">
-                    <img src="../../src/game/slide-1.webp" alt="" class="media-image">
+                    <img src="../../src/game/media-2.jpg" alt="" class="media-image">
                     <div class="media-scrim"></div>
                     <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
                 </div>
                 <div class="screenshot nu-big col-lg-6">
-                    <img src="../../src/game/slide-5.webp" alt="" class="media-image">
+                    <img src="../../src/game/media-3.jpg" alt="" class="media-image">
                     <div class="media-scrim"></div>
                     <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
                 </div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
-                <div class="screenshot nu-big col-lg-6"></div>
-                <div class="screenshot nu-small col-lg-3"></div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-4.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-5.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-6.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-7.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-8.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-9.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-big col-lg-6">
+                    <img src="../../src/game/media-10.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
+                <div class="screenshot nu-small col-lg-3">
+                    <img src="../../src/game/media-11.jpg" alt="" class="media-image">
+                    <div class="media-scrim"></div>
+                    <p class="media-title"><i class="fa fa-file-image"></i> SCREENSHOT</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="purchase">
         <div class="purchase-dialog">
-            <h3 class="purchase-title">PRE-ORDER DOOM ETERNAL - DELUXE EDITION</h3>
+            <h3 class="purchase-title">PRE-ORDER Crysis ETERNAL - DELUXE EDITION</h3>
             <p class="purchase-platforms">Coming Soon to Xbox One, PlayStation®4, Nintendo Switch, PC</p>
-            <p class="purchase-descriptions">Raze Hell with the DOOM Eternal Deluxe Edition </p>
-            <p class="purchase-descriptions">As the DOOM Slayer, you return to find Earth has suffered a demonic
+            <p class="purchase-descriptions">Raze Hell with the Crysis Eternal Deluxe Edition </p>
+            <p class="purchase-descriptions">As the Crysis Slayer, you return to find Earth has suffered a demonic
                 invasion. Raze Hell and discover the Slayer’s origins and his enduring mission to rip and tear…until it
                 is done.</p>
             <p class="purchase-descriptions">The Deluxe Edition includes:</p>
@@ -156,7 +286,19 @@
         <div class="purchase-details"></div>
     </div>
 
+    <div class="footer">
+        <div class="logo">
+            <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+            <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+        </div>
+        <div class="certificates">
+            <img src="../../src/certificates/1.gif" alt="" class="cert">
+            <img src="../../src/certificates/2.jpg" alt="" class="cert">
+        </div>
+        <div class="copy-right">© 2019 Arachnid Softworks LLC. Trademarks belong to their respective owners. All Rights
+            Reserved.</div>
 
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -168,6 +310,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../../jquery.autocomplete.js"></script>
     <script src="app.js"></script>
 </body>
 

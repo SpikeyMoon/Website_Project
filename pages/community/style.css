@@ -6,7 +6,7 @@
 .confirm-button {
     padding: 4px 16px;
     border: none;
-    background: purple;
+    background: #9b27af;
     transition: 300ms;
     border-radius: 4px;
     color: #fff;
@@ -16,7 +16,7 @@
 }
 
 .confirm-button:hover {
-    filter: saturate(0.5);
+    background: #69007f;
 }
 
 select {
@@ -56,7 +56,7 @@ select {
     position: relative;
     top: calc(50% - 200px);
     left: calc(50% - 200px);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 16px;
 }
 
@@ -105,7 +105,7 @@ button.search-button {
     padding: 0;
     margin: 0 15px 32px 15px;
     max-width: calc(75% - 30px);
-    border-radius: 8px;
+    border-radius: 4px;
     height: 56px;
     overflow: hidden;
 }
@@ -120,7 +120,7 @@ button.search-button {
     padding: 8px;
     /* padding-bottom: 16px; */
     background: #efefef;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .off-color {
@@ -166,7 +166,7 @@ button.search-button {
     display: flex;
     padding: 8px 16px;
     background: #efefef;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 4px 4px;
 }
 
 .side-off-color {
@@ -177,7 +177,7 @@ button.search-button {
 .side-section-header {
     background: #999;
     padding: 0 16px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 4px 4px 0 0;
     height: 36px;
     line-height: 36px;
     color: #fff;
@@ -188,7 +188,7 @@ button.search-button {
 
 .side-bar-section {
     background: #efefef;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 16px;
 }
 
@@ -198,7 +198,7 @@ button.search-button {
 
 .new-post-button {
     text-transform: uppercase;
-    background: purple;
+    background: #9b27af;
     height: 48px;
     padding: 0px 24px;
     float: right;
@@ -208,7 +208,9 @@ button.search-button {
     transition: 300ms;
 }
 
-.new-post-button:hover {filter: saturate(0.5);}
+.new-post-button:hover {
+    background: #69007f;
+}
 
 .hoverable {
     cursor: pointer;
@@ -241,7 +243,7 @@ button.search-button {
 
 .forum-main-section {
     background: #efefef;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 32px;
 }
 
@@ -301,7 +303,7 @@ button.search-button {
     justify-content: space-between;
     background: #999999;
     padding: 0 8px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 4px 4px 0 0;
     position: relative;
 }
 
@@ -377,3 +379,7 @@ p {
     background: #ffffff55;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+}

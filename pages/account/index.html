@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Your account - Arachnid Entertainment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,50 +13,77 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../overlay/navbanner.css">
+    <link rel="shortcut icon" href="../../src/logo/logo-img-only.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../default.css">
 </head>
 
 <body>
     <!-- Website navigation -->
-    <div class="nav-menu-opener">
-        <i class="fa fa-bars nav-opener-icon"></i>
-    </div>
+    <nav class="nav-banner">
+        <div class="nav-left">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="nav-mid">
+        </div>
+        <div class="nav-right">
+            <div class="login">
+                <button class="login-button">Log in / sign up</button>
+                <div class="login-mobile"><i class="fa fa-sign-in-alt"></i></div>
+                <div class="loggedin-person hide">
+                    <p class="person-name">Jomith</p>
+                    <img src="../../src/account/display.jpg" alt="" class="person-display-pic">
+                </div>
+            </div>
+            <div class="nav-cart"><i class="fa fa-shopping-cart"></i></div>
+            <div class="nav-search"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
 
+    <div id="search-overlay" class="overlay">
+        <span class="closebtn" title="Close Overlay"><i class="fa fa-times"></i></span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
     <nav class="navigation-menu">
         <div class="navigation-top d-flex">
-            <div class="logo">
-                <div class="logo-item"></div>
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
             </div>
-            <div class="login-signup d-flex">
-                <div class="login">
-                    <div class="login-icon"></div>
-                    <h3 class="login-text">LOGIN</h3>
-                </div>
-                <div class="signup">
-                    <div class="signup-icon"></div>
-                    <h3 class="signup-text">SIGN UP</h3>
-                </div>
+
+            <div class="logo">
+                <img src="../../src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="../../src/logo/logo-text-only.png" alt="" class="logo-text-only">
             </div>
         </div>
         <div class="main-menu w-100">
             <div class="menu-item menu-item-1">
                 <a href="#" class="menu-title" id="GAMES">GAMES</a>
-                <a href="#game-1" class="menu-sub-item" id="game-1">Game #1</a>
-                <a href="#game-2" class="menu-sub-item" id="game-2">Game #2</a>
-                <a href="#game-3" class="menu-sub-item" id="game-3">Game #3</a>
-                <a href="#game-4" class="menu-sub-item" id="game-4">Game #4</a>
-                <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
-                <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
-                <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
-                <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a>
+                <a href="#" class="menu-sub-item" id="game-1">Doom</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Paragon</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Steep</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Crysis</a>
+                <!-- <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
+                    <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
+                    <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
+                    <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a> -->
             </div>
             <div class="menu-item menu-item-2">
                 <a href="#" class="menu-title" id="NEWS">NEWS</a>
-                <a href="#latest" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#" class="menu-sub-item" id="latest">Latest</a>
                 <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
             </div>
             <div class="menu-item menu-item-3">
                 <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
-                <a href="#forums" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#" class="menu-sub-item" id="forums">Forums</a>
                 <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
                 <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
                 <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
@@ -73,7 +100,17 @@
                 <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="nav-footer">
+            <div class="nav-footer-left">
+                <p class="nav-footer-title">Follow us on</p>
+            </div>
+            <div class="nav-footer-right">
+                <p class="social-media"><i class="fab fa-facebook"></i></p>
+                <p class="social-media"><i class="fab fa-twitter"></i></p>
+                <p class="social-media"><i class="fab fa-discord"></i></p>
+                <p class="social-media"><i class="fab fa-youtube"></i></p>
+            </div>
+        </div>
     </nav>
 
     <div class="account-overview">
@@ -406,6 +443,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../../jquery.autocomplete.js"></script>
     <script src="app.js"></script>
 </body>
 

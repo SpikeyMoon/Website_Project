@@ -1,7 +1,15 @@
 * {
     padding: 0;
     margin: 0;
-    align-content: center;
+    /* align-content: center; */
+}
+
+.button-wrapper {
+    position: relative;
+    text-align: center;
+    top: 75%;
+    height: 100px;
+    z-index: 1;
 }
 
 .platform-buttons img {
@@ -149,8 +157,12 @@ li.purchase-descriptions {
 
 .slide-image {
     position: absolute;
-    top: calc(100% -1000px);
     left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: -webkit-fill-available;
+    filter: brightness(0.5);
 }
 
 .news-time {
@@ -195,7 +207,7 @@ li.purchase-descriptions {
 
 .news-and-update p {}
 
-.news-image {image-rendering: pixelated;height: 100%;position: absolute;left: -25%;}
+.news-image {image-rendering: pixelated;width: 100%;height: -webkit-fill-available;position: absolute;/* left: -25%; */object-fit: cover;object-position: center;}
 
 .descriptions {
     font-size: 20px;
@@ -238,8 +250,9 @@ html {
     position: absolute;
     top: 10%;
     left: 50%;
-    background: url(../../src/game/purchase.webp);
+    background: url("../../src/game/purchase.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .purchase-dialog {
@@ -354,6 +367,7 @@ html {
 .media {
     background: linear-gradient(0deg, #5f2121, #1c1c1c);
     padding-top: 16px;
+    padding-bottom: 32px;
 }
 
 .news-and-updates {
@@ -366,10 +380,10 @@ html {
     height: 100px;
     width: 300px;
     z-index: 200;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10%;
+    /* position: inherit; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* bottom: 10%; */
     transition: 600ms;
     background: #ffffffcc;
     border: none;
@@ -377,9 +391,10 @@ html {
     font-weight: 700;
     font-size: 18px;
     font-family: Orbitron, sans-serif;
+    margin: 0 16px;
 }
 
-i {
+.button-wrapper i {
     font-size: 16px;
     margin-right: 4px;
 }
@@ -389,17 +404,17 @@ i {
     color: #ffffff;
 }
 
-.buy-button {left: 58%!important;}
+.buy-button {/* left: 58%!important; */}
 
 .trailer-button {
-    left: 42%!important;
+    /* left: 42%!important; */
 }
 
 picture {
     position: absolute;
     height: 100vh;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
     top: 0;
 }
 

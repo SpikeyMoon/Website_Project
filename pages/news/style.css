@@ -40,11 +40,16 @@
     min-height: 36px;
     min-width: 64px;
     color: #fff;
-    background: purple;
+    background: #9b27af;
     border-radius: 4px;
     position: absolute;
     right: 0;
     bottom: 16px;
+    transition: 300ms;
+}
+
+.learn-more-button:hover {
+    background: #69007f;
 }
 
 .article-detail {

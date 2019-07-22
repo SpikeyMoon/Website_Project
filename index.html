@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Arachnid Entertainment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,173 +13,312 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Main page CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Mobile CSS -->
-    <link rel="stylesheet" href="style.m.css">
-    <!-- Functionality CSS -->
-    <link rel="stylesheet" href="functionality.css">
+    <link rel="stylesheet" href="./overlay/navbanner.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="animate.css">
+    <link rel="shortcut icon" href="./src/logo/logo-img-only.png" type="image/x-icon">
+    <link rel="stylesheet" href="./default.css">
 </head>
 
 <body>
-    <div class="main-content">
-        <div class="nav-menu-opener">
-            <i class="fa fa-bars nav-opener-icon"></i>
-        </div>
 
-        <div class="logo mobile-only">
-            <div class="logo-item mobile-only"></div>
+    <nav class="nav-banner">
+        <div class="nav-left">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+            <div class="logo">
+                <img src="./src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="./src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
         </div>
-
-        <nav class="navigation-menu">
-            <div class="navigation-top d-flex">
-                <div class="logo">
-                    <div class="logo-item"></div>
+        <div class="nav-mid">
+        </div>
+        <div class="nav-right">
+            <div class="login">
+                <button class="login-button">Log in / sign up</button>
+                <div class="login-mobile"><i class="fa fa-sign-in-alt"></i></div>
+                <div class="loggedin-person hide">
+                    <p class="person-name">Jomith</p>
+                    <img src="./src/account/display.jpg" alt="" class="person-display-pic">
                 </div>
-                <div class="login-signup d-flex">
-                    <div class="login">
-                        <div class="login-icon"></div>
-                        <h3 class="login-text">LOGIN</h3>
+            </div>
+            <div class="nav-cart"><i class="fa fa-shopping-cart"></i></div>
+            <div class="nav-search"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
+    <div id="search-overlay" class="overlay">
+        <span class="closebtn" title="Close Overlay"><i class="fa fa-times"></i></span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <nav class="navigation-menu">
+        <div class="navigation-top d-flex">
+            <div class="nav-menu-opener">
+                <i class="fa fa-bars nav-opener-icon"></i>
+            </div>
+
+            <div class="logo">
+                <img src="./src/logo/logo-img-only.png" alt="" class="logo-img-only">
+                <img src="./src/logo/logo-text-only.png" alt="" class="logo-text-only">
+            </div>
+        </div>
+        <div class="main-menu w-100">
+            <div class="menu-item menu-item-1">
+                <a href="#" class="menu-title" id="GAMES">GAMES</a>
+                <a href="#" class="menu-sub-item" id="game-1">Doom</a>
+                <a href="#game-2" class="menu-sub-item" id="game-2">Paragon</a>
+                <a href="#game-3" class="menu-sub-item" id="game-3">Steep</a>
+                <a href="#game-4" class="menu-sub-item" id="game-4">Crysis</a>
+                <a href="#game-5" class="menu-sub-item" id="game-5">Fate: Grand Order</a>
+                <a href="#game-6" class="menu-sub-item" id="game-6">Nier Automata</a>
+                <!-- <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a> -->
+                <!-- <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a> -->
+            </div>
+            <div class="menu-item menu-item-2">
+                <a href="#" class="menu-title" id="NEWS">NEWS</a>
+                <a href="#" class="menu-sub-item" id="latest">Latest</a>
+                <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
+            </div>
+            <div class="menu-item menu-item-3">
+                <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
+                <a href="../pages/community/index.html" class="menu-sub-item" id="forums">Forums</a>
+                <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
+                <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
+                <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
+            </div>
+            <div class="menu-item menu-item-4">
+                <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
+                <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
+                <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
+            </div>
+            <div class="menu-item menu-item-5">
+                <a href="#" class="menu-title" id="SHOP">SHOP</a>
+                <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
+                <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
+                <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="nav-footer-left">
+                <p class="nav-footer-title">Follow us on</p>
+            </div>
+            <div class="nav-footer-right">
+                <p class="social-media"><i class="fab fa-facebook"></i></p>
+                <p class="social-media"><i class="fab fa-twitter"></i></p>
+                <p class="social-media"><i class="fab fa-discord"></i></p>
+                <p class="social-media"><i class="fab fa-youtube"></i></p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="primary-content-navigation">
+        <div class="primary-nav-section section-1">
+            <div class="section-switch-tooltip">
+                <h6 class="section-title">ABOUT US</h6>
+                <div class="section-icon fa fa-bullseye"></div>
+            </div>
+        </div>
+        <div class="primary-nav-section section-2">
+            <div class="section-switch-tooltip">
+                <h6 class="section-title">GAMES</h6>
+                <div class="section-icon"></div>
+            </div>
+        </div>
+        <div class="primary-nav-section section-3">
+            <div class="section-switch-tooltip">
+                <h6 class="section-title">WORK WITH US</h6>
+                <div class="section-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondary-content-navigation">
+        <div class="secondary-navigation secondary-navigation-previous"><i class="fa fa-long-arrow-alt-left"
+                id="secondary-nav-previous-icon"></i></div>
+        <div class="secondary-navigation secondary-navigation-pause"><i class="fa fa-pause transitioning"
+                id="secondary-nav-pause-icon"></i></div>
+        <div class="secondary-navigation secondary-navigation-next"><i class="fa fa-long-arrow-alt-right"
+                id="secondary-nav-next-icon"></i></div>
+    </div>
+
+    <div class="primary-content primary-content-1 primary-content-current">
+
+        <div class="secondary-content secondary-content-1 secondary-content-current">
+
+            <img src="./src/BG-1-02.jpg" alt="" class="img_bg">
+            <div class="scrim">
+                <div class="content-container">
+                    <div class="video_placeholder">
+                        <img src="./src/logo/logo-full.png" alt="">
                     </div>
-                    <div class="signup">
-                        <div class="signup-icon"></div>
-                        <h3 class="signup-text">SIGN UP</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="main-menu">
-                <div class="menu-item menu-item-1">
-                    <a href="#" class="menu-title" id="GAMES">GAMES</a>
-                    <a href="#game-1" class="menu-sub-item" id="game-1">Game #1</a>
-                    <a href="#game-2" class="menu-sub-item" id="game-2">Game #2</a>
-                    <a href="#game-3" class="menu-sub-item" id="game-3">Game #3</a>
-                    <a href="#game-4" class="menu-sub-item" id="game-4">Game #4</a>
-                    <a href="#game-5" class="menu-sub-item" id="game-5">Game #5</a>
-                    <a href="#game-6" class="menu-sub-item" id="game-6">Game #6</a>
-                    <a href="#game-7" class="menu-sub-item" id="game-7">Game #7</a>
-                    <a href="#game-8" class="menu-sub-item" id="game-8">Game #8</a>
-                </div>
-                <div class="menu-item menu-item-2">
-                    <a href="#" class="menu-title" id="NEWS">NEWS</a>
-                    <a href="#latest" class="menu-sub-item" id="latest">Latest</a>
-                    <a href="#hottest" class="menu-sub-item" id="hottest">Hottest</a>
-                </div>
-                <div class="menu-item menu-item-3">
-                    <a href="#" class="menu-title" id="COMMUNITY">COMMUNITY</a>
-                    <a href="#forums" class="menu-sub-item" id="forums">Forums</a>
-                    <a href="#popular" class="menu-sub-item" id="popular">Popular Posts</a>
-                    <a href="#recent" class="menu-sub-item" id="recent">Recent Posts</a>
-                    <a href="#lfg" class="menu-sub-item" id="lfg">Looking For</a>
-                </div>
-                <div class="menu-item menu-item-4">
-                    <a href="#" class="menu-title" id="WORKWITHUS">WORK WITH US</a>
-                    <a href="#WWU-FR" class="menu-sub-item" id="WWU-FR">Lyon, France</a>
-                    <a href="#WWU-TX" class="menu-sub-item" id="WWU-TX">Austin, Texas</a>
-                </div>
-                <div class="menu-item menu-item-5">
-                    <a href="#" class="menu-title" id="SHOP">SHOP</a>
-                    <a href="#digital-store" class="menu-sub-item" id="digital-store">Digital Store</a>
-                    <a href="#merchandise" class="menu-sub-item" id="merchandise">Mechandise</a>
-                    <a href="#redeem-code" class="menu-sub-item" id="redeem-code">Redeem Code</a>
-                </div>
-            </div>
-            <div class="footer"></div>
-        </nav>
-
-        <div class="primary-content-navigation">
-            <div class="primary-nav-section section-1">
-                <div class="section-switch-tooltip">
-                    <h6 class="section-title">ABOUT US</h6>
-                    <div class="section-icon"></div>
-                </div>
-            </div>
-            <div class="primary-nav-section section-2">
-                <div class="section-switch-tooltip">
-                    <h6 class="section-title">GAMES</h6>
-                    <div class="section-icon"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="secondary-content-navigation">
-            <div class="secondary-navigation secondary-navigation-previous"><i class="fa fa-long-arrow-alt-left"
-                    id="secondary-nav-previous-icon"></i></div>
-            <div class="secondary-navigation secondary-navigation-pause"><i class="fa fa-pause transitioning"
-                    id="secondary-nav-pause-icon"></i></div>
-            <div class="secondary-navigation secondary-navigation-next"><i class="fa fa-long-arrow-alt-right"
-                    id="secondary-nav-next-icon"></i></div>
-        </div>
-
-        <div class="primary-content primary-content-1 primary-content-current">
-
-            <div class="secondary-content secondary-content-1 secondary-content-current">
-
-                <img src="./src/BG-01.jpg" alt="" class="img_bg">
-                <div class="scrim">
                     <h3 class="secondary-content-title animated fadeInUp delay-1s">WE ARE <br><span
                             class="emphasis">ARACHNID</span></h3>
                     <p class="secondary-content-descriptions animated fadeInUp delay-2s">We are passionate about
                         innovation</p>
                     <button class="default_button animated fadeInUp delay-3s" id="WWU_button">Work with us</button>
-                    <div class="video_placeholder">
-                        <video autoplay muted>
-                            <source src="">
-                        </video>
-                    </div>
+
                 </div>
             </div>
+        </div>
 
-            <div class="secondary-content secondary-content-2 secondary-content-next">
-                <img src="./src/BG-01.jpg" alt="" class="img_bg">
-                <div class="scrim">
+        <div class="secondary-content secondary-content-2 secondary-content-next">
+            <img src="./src/BG-1-01.jpg" alt="" class="img_bg">
+            <div class="scrim">
+                <div class="content-container">
+                    <div class="video_placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxRFtNcU3nI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                     <h3 class="secondary-content-title animated fadeInUp delay-1s">WE MAKE <br><span
-                            class="emphasis">GAMES</span></h3>
+                            class="emphasis">VIDEO GAMES</span></h3>
                     <p class="secondary-content-descriptions animated fadeInUp delay-2s">And have a reputation for
                         setting <br>the industry standard for graphics</p>
                     <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">See our games</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="secondary-content secondary-content-3 secondary-content-next">
+            <img src="./src/BG-1-03.jpg" alt="" class="img_bg">
+            <div class="scrim">
+                <div class="content-container">
                     <div class="video_placeholder">
-                        <video autoplay muted>
-                            <source src="">
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/9MeUfaYaIFQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                </div>
-            </div>
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">WE BRING <br><span
+                            class="emphasis">UPDATES DAILY</span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">So you always get the latest of
+                        news available</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">Check it out</button>
 
-        </div>
-
-        <div class="primary-content primary-content-2 primary-content-next">
-            <div class="secondary-content secondary-content-1 secondary-content-current">
-                <img src="./src/BG-02.jpg" alt="">
-                <div class="scrim">
-                    <h3 class="secondary-content-title"></h3>
-                    <p class="secondary-content-descriptions"></p>
-                </div>
-            </div>
-            <div class="secondary-content secondary-content-2 secondary-content-next">
-                <video src="./src/01.webm" autoplay muted loop class="video-active"></video>
-                <div class="scrim">
-                    <h3 class="secondary-content-title"></h3>
-                    <p class="secondary-content-descriptions"></p>
                 </div>
             </div>
         </div>
 
-        <div class="primary-content primary-content-3 primary-content-next"></div>
-        <div class="primary-content primary-content-4 primary-content-next"></div>
-        <div class="primary-content primary-content-5 primary-content-next"></div>
+        <div class="secondary-content secondary-content-4 secondary-content-next">
+            <img src="./src/BG-1-04.jpg" alt="" class="img_bg">
+            <div class="scrim">
+                <div class="content-container">
+                    <!-- <div class="video_placeholder">
+                            <iframe src="https://www.youtube.com/embed/9MeUfaYaIFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> -->
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">WE HAVE AN<br><span
+                            class="emphasis">AMAZING COMMUNITY</span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">And we are proud of it</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">See the
+                        community</button>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <!-- Hash content -->
-    <div class="hash-content">
-        <div class="hash-content-news">
-            <div class="news news-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum iure rerum, ipsum quod voluptatem ex
-                porro, deserunt optio deleniti eligendi debitis error delectus tenetur hic maiores obcaecati voluptas
-                corrupti.
+    <div class="primary-content primary-content-2 primary-content-next">
+        <div class="secondary-content secondary-content-1 secondary-content-current">
+            <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/2HOClc6Svg4?autoplay=1&loop=1&controls=0&&showinfo=0&playlist=2HOClc6Svg4"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="scrim">
+                <div class="content-container background-black">
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">DOOM<br><span
+                            class="emphasis"></span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">A gun, a chainsaw, lots of
+                        guns<br> and A LOT of dead demons</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">Start slaying</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="secondary-content secondary-content-2 secondary-content-next">
+            <iframe
+                src="https://www.youtube.com/embed/w-Desk2WRQY?controls=0&loop=1&&showinfo=0&playlist=w-Desk2WRQY&autoplay"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="scrim">
+                <div class="content-container background-black">
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">PARAGON<br><span
+                            class="emphasis"></span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">New style of MOBA<br> the
+                        brings a new flavour</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">Join now</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="secondary-content secondary-content-3 secondary-content-next">
+            <iframe
+                src="https://www.youtube.com/embed/sAGXhqUcPzs?controls=0&loop=1&&showinfo=0&playlist=sAGXhqUcPzs&autoplay"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="scrim">
+                <div class="content-container background-black">
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">STEEP<br><span
+                            class="emphasis"></span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">Ski, boarding, gliding<br>see
+                        you at the finish line</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">Where do I sign
+                        up?</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="secondary-content secondary-content-4 secondary-content-next">
+            <iframe
+                src="https://www.youtube.com/embed/8PdGUZauShA?controls=0&loop=1&&showinfo=0&playlist=8PdGUZauShA&autoplay"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="scrim">
+                <div class="content-container background-black">
+                    <h3 class="secondary-content-title animated fadeInUp delay-1s">Crysis<br><span
+                            class="emphasis"></span></h3>
+                    <p class="secondary-content-descriptions animated fadeInUp delay-2s">Alien vs Predator?<br>This is
+                        Predator vs EVERYTHING</p>
+                    <button class="default_button animated fadeInUp delay-3s" id="GAMES_button">Start the hunt</button>
+
+                </div>
             </div>
         </div>
     </div>
+    <div class="primary-content primary-content-3 primary-content-next">
+        <img src="./src/BG-2-01.jpg" alt="" class="img_bg">
+        <div class="scrim">
+            <div class="content-container">
+                <h3 class="secondary-content-title animated fadeInUp delay-1s">WORK WITH US <br><span
+                        class="emphasis"></span></h3>
+                <p class="secondary-content-descriptions animated fadeInUp delay-2s">We are always open to new
+                    passionate people</p>
+                <button class="default_button animated fadeInUp delay-3s" id="">Lyon, France</button>
+                <button class="default_button animated fadeInUp delay-3s" id="work-button-tx">Austin, Texas</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="primary-content primary-content-4 primary-content-next"></div>
+    <div class="primary-content primary-content-5 primary-content-next"></div>  -->
+    <div class="footer footer-hide">
+        <div class="logo">
+            <img src="./src/logo/logo-img-only.png" alt="" class="logo-img-only">
+            <img src="./src/logo/logo-text-only.png" alt="" class="logo-text-only">
+        </div>
+        <div class="certificates">
+            <img src="./src/certificates/1.gif" alt="" class="cert">
+            <img src="./src/certificates/2.jpg" alt="" class="cert">
+        </div>
+        <div class="copy-right">© 2019 Arachnid Softworks LLC. Trademarks belong to their respective owners. All Rights
+            Reserved.</div>
+
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -191,6 +330,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="jquery.autocomplete.js"></script>
 
 </body>
 
