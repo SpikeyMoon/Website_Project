@@ -72,20 +72,26 @@ $(document).ready(function () {
         window.location = "../game/index.html"
     });
 
-    $("#clear-filter").change(function (e) { 
-        if($(this).prop("checked") == true);
+    $("#clear-filter").click(function (e) { 
+        document.getElementById('set-filter').checked = false;
+        document.getElementById('clear-filter').checked = true;
         e.preventDefault();
         $(".shop-showcase .item-card").fadeIn();
     });
-
-    $("#set-filter").change(function (e) { 
-        
-        if($(this).prop("checked") == true);
+    
+    $("#set-filter").click(function (e) { 
+        document.getElementById('clear-filter').checked = false;
+        document.getElementById('set-filter').checked = true;
         e.preventDefault();
         $(".shop-showcase .item-card").fadeOut();
 
         $(".item-filtered").fadeIn();
     });
+
+    $('input:radio[name="franchise"]').click(function(e) {
+        // $('input:radio[name="franchise"]').prop("checked", false);
+        $(this).prop('checked', true);
+    })
     
     /////////////////////////////////////////////////////
     var loggedIn = localStorage.getItem("loggedIn");
@@ -120,6 +126,11 @@ $(document).ready(function () {
 
     var countries = [
         { value: 'DOOM', data: 'DO' },
+        { value: 'DOOM Eternal', data: 'DE' },
+        { value: 'Crysis Eternal', data: 'CE' },
+        { value: 'Crysis', data: 'DE' },
+        { value: 'Crysis Eternal: Angel City', data: 'DE' },
+        { value: 'Crysis Eternal: Sole Survivor', data: 'DE' },
         { value: 'DOOM Eternal', data: 'DE' },
         { value: 'PARAGON', data: 'PG' },
         { value: 'PARAGON:YOUNGBLOOD', data: 'PY' },

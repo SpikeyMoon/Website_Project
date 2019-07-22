@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+.primary-content-3 .img_bg {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
 .secondary-content > img {
 }
 html, body {
@@ -429,8 +437,8 @@ nav.navigation-menu.navigation-active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50%;
-    width: 75%;
+    min-height: 50%;
+    min-width: 75%;
 }
 
 .scrim {
@@ -442,28 +450,31 @@ nav.navigation-menu.navigation-active {
 }
 
 .secondary-content-title {
-    font-size: 5rem;
-    color: #ffffff;
-    line-height: 70%;
+    font-size: 2.5rem;
+    color: #6d6d6d;
+    line-height: 144%;
     left: 0;
     /* transform: translateY(-50%); */
-    filter: drop-shadow(2px 4px 6px black);
+    /* filter: drop-shadow(2px 2px 4px black); */
 }
 
 .primary-content-3 .secondary-content-title {
     line-height: 4.5rem;
+    color: #fff;
 }
 
 .emphasis {
-    font-size: 3.4rem;
+    font-size: 3.5rem;
     color: #9c27b0;
+    letter-spacing: -0.2rem;
 }
 
 .secondary-content-descriptions {
     font-size: 1.3rem;
     transform: translateY(-50%);
     color: #333;
-    filter: drop-shadow(2px 1px 4px black);
+    max-width: 50%;
+    /* filter: drop-shadow(2px 1px 4px black); */
 }
 
 .primary-content-3 .secondary-content-descriptions {
@@ -473,6 +484,7 @@ nav.navigation-menu.navigation-active {
 
 .background-black .secondary-content-descriptions {
     margin-top: 16px;
+    max-width: initial;
 }
 
 .default_button {
@@ -485,21 +497,34 @@ nav.navigation-menu.navigation-active {
 }
 
 .primary-content-3 button {
-    color: #fff;
-    background: #9b27af;
+    color: #9b27af;
+    background: none;
+    border: 1px solid #9b27af;
+    border-radius: 4px;
+}
+
+button#work-button-tx {
+    margin-left: 1rem;
 }
 
 .primary-content-3 button:hover {
-    background: #69007f;
+    /* border: 1px solid #9b27af; */
+    /* color: #9b27af; */
+    /* filter: brightness(0.8); */
+    background: #e1bee7;
 }
 
 .secondary-content button {
-    background: #313131;
-    color: #ffffff;
+    background: none;
+    color: #9b27af;
+    border: 1px solid #9b27af;
+}
+
+.secondary-content button:hover {
+    background: #e1bee7;
 }
 
 #WWU_button:hover {
-    background: #202020;
 }
 
 /* @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -542,6 +567,7 @@ nav.navigation-menu.navigation-active {
     position: absolute;
     right: 0;
     top: 0;
+    height: 70%;
 }
 
 .secondary-content-2 h3 {
@@ -559,6 +585,16 @@ nav.navigation-menu.navigation-active {
 
 top: 65%;
 }
+
+.primary-content-2 button:hover {
+    background: #e1bee7;
+    color: #9b27af;
+}
+
+.primary-content-2 button {
+    border: 1px solid #fff;
+    color: #fff;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px){
     * {
         padding: 0;
@@ -571,11 +607,20 @@ top: 65%;
         margin: 0;
     }
 }
+@media only screen and (max-width: 767px){
+    .content-container {
+        top: 40%;
+    }
+}
 @media only screen and (max-width: 575px){
     * {
         padding: 0;
         margin: 0;
     }
+
+.primary-content-navigation {
+    transform: scale(0.7)!important;
+}
 
     .background-black {
         left: 50%!important;
@@ -586,6 +631,30 @@ top: 65%;
         padding: 0;
         margin: 0;
     }
+
+.primary-content-navigation {
+    transform-origin: 100%;
+    transform: scale(.9);
+    transition: 300ms;
+}
+
+.background-black .secondary-content-title {
+    margin: auto;
+}
+
+.secondary-content-navigation {
+    transform: scale(0.7);
+    transform-origin: bottom right;
+}
+
+p.secondary-content-descriptions {
+    margin: auto;
+}
+
+.content-container {
+    top: 40%;
+    margin-top: 7rem;
+}
     .video_placeholder {
         position: relative;
         top: initial;
@@ -597,7 +666,7 @@ top: 65%;
         width: 80%;
         max-width: initial;
         background: none;
-        max-height: 40%;
+        max-height: 30%;
     }
     .content-container {
         text-align: center;
@@ -626,12 +695,18 @@ top: 65%;
     padding: 16px;
     height: max-content;
     width: max-content;
-    left: 35%;
-    top: 75%;
+    min-width: 10%;
+    min-height: initial;
+    /* left: 35%; */
+    /* top: 75%; */
 }
 
 .background-black > *{
     color: #fff;
+}
+
+.primary-content-2 .secondary-content-title {
+    width: max-content;
 }
 
 .footer-hide {
