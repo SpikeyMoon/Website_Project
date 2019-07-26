@@ -295,6 +295,30 @@ $(function () {
             timerPaused = !timerPaused;
         }
     });
+
+    $("#WWU-button").click(function(e) {
+        e.preventDefault();
+        jumpToSection(2, sectionType.PRIMARY);
+    });
+
+    $("#GAMES-button").click(function(e) {
+        e.preventDefault();
+        jumpToSection(1, sectionType.PRIMARY);
+    });
+
+    $("#NEWS-button").click(function(e) {
+        e.preventDefault();
+        window.location = "./pages/news/index.html"
+    });
+
+    $("#COMM-button").click(function(e) {
+        e.preventDefault();
+        window.location = "./pages/community/index.html"
+    });
+
+
+
+
     ///////////////////////////////////////////
 
     $(".nav-search").click(function (e) {
@@ -327,6 +351,11 @@ $(function () {
     var countries = [
         { value: 'DOOM', data: 'DO' },
         { value: 'DOOM Eternal', data: 'DE' },
+        { value: 'Crysis Eternal', data: 'CE' },
+        { value: 'Crysis', data: 'DE' },
+        { value: 'Crysis Eternal: Angel City', data: 'DE' },
+        { value: 'Crysis Eternal: Sole Survivor', data: 'DE' },
+        { value: 'DOOM Eternal', data: 'DE' },
         { value: 'PARAGON', data: 'PG' },
         { value: 'PARAGON:YOUNGBLOOD', data: 'PY' },
         { value: 'STEEP', data: 'ST' }
@@ -335,6 +364,7 @@ $(function () {
     $('#search-input').autocomplete({
         lookup: countries,
         onSelect: function (suggestion) {
+            window.location = "./pages/game/index.html";
 
         }
     });

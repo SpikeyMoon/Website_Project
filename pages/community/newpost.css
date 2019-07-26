@@ -170,3 +170,7 @@
 .error::before{
     color: #B00020!important;
 }
+
+.footer {
+    position: fixed!important;
+}

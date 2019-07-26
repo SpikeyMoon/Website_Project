@@ -2,7 +2,7 @@ $(document).ready(function () {
     $(".learn-more-button").click(function (e) {
         e.preventDefault();
         $("html, body").animate(
-            {scrollTop : ($(".jobs").offset().top)}
+            {scrollTop : ($(".jobs").offset().top) - 64}
             , 500);
     });
 
@@ -57,6 +57,11 @@ $(document).ready(function () {
     var countries = [
         { value: 'DOOM', data: 'DO' },
         { value: 'DOOM Eternal', data: 'DE' },
+        { value: 'Crysis Eternal', data: 'CE' },
+        { value: 'Crysis', data: 'DE' },
+        { value: 'Crysis Eternal: Angel City', data: 'DE' },
+        { value: 'Crysis Eternal: Sole Survivor', data: 'DE' },
+        { value: 'DOOM Eternal', data: 'DE' },
         { value: 'PARAGON', data: 'PG' },
         { value: 'PARAGON:YOUNGBLOOD', data: 'PY' },
         { value: 'STEEP', data: 'ST' }
@@ -65,6 +70,7 @@ $(document).ready(function () {
     $('#search-input').autocomplete({
         lookup: countries,
         onSelect: function (suggestion) {
+            window.location = "../game/index.html";
 
         }
     });

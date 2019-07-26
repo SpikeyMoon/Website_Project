@@ -4,3 +4,7 @@
 p,h1,h2,h3,h4,h5,h6,button,div,label {
     font-family: 'Roboto', sans-serif;
 }
+
+.nav-banner, .nav-footer {
+	background: #4a148c!important;
+}

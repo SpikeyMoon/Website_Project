@@ -57,42 +57,42 @@ $(document).ready(function () {
         bannerScrolling();
     }, 5000);
 
-    $(".item-buy").click(function (e) { 
+    $(".item-buy").click(function (e) {
         e.preventDefault();
         alert("Item added to cart");
     });
 
-    $(".default-button").click(function (e) { 
+    $(".default-button").click(function (e) {
         e.preventDefault();
         alert("Item added to cart");
     });
 
-    $("#click-here").click(function (e) { 
+    $("#click-here").click(function (e) {
         e.preventDefault();
         window.location = "../game/index.html"
     });
 
-    $("#clear-filter").click(function (e) { 
-        document.getElementById('set-filter').checked = false;
-        document.getElementById('clear-filter').checked = true;
+    $("#clear-filter").click(function (e) {
+        $(".filter-container").removeClass("checked");
+        $(".filter-container").has(this).addClass("checked");
         e.preventDefault();
         $(".shop-showcase .item-card").fadeIn();
     });
-    
-    $("#set-filter").click(function (e) { 
-        document.getElementById('clear-filter').checked = false;
-        document.getElementById('set-filter').checked = true;
+
+    $("#set-filter").click(function (e) {
+        $(".filter-container").removeClass("checked");
+        $(".filter-container").has(this).addClass("checked");
         e.preventDefault();
         $(".shop-showcase .item-card").fadeOut();
 
         $(".item-filtered").fadeIn();
     });
 
-    $('input:radio[name="franchise"]').click(function(e) {
+    $('input:radio[name="franchise"]').click(function (e) {
         // $('input:radio[name="franchise"]').prop("checked", false);
         $(this).prop('checked', true);
     })
-    
+
     /////////////////////////////////////////////////////
     var loggedIn = localStorage.getItem("loggedIn");
 
@@ -117,8 +117,8 @@ $(document).ready(function () {
         $(".login-button").addClass("hide");
         $(".loggedin-person").removeClass("hide");
         $(".login-mobile").addClass("hide");
-    } 
-    if(loggedIn == "false") {
+    }
+    if (loggedIn == "false") {
         $(".login-button").removeClass("hide");
         $(".loggedin-person").addClass("hide");
         $(".login-mobile").removeClass("hide");
@@ -140,6 +140,7 @@ $(document).ready(function () {
     $('#search-input').autocomplete({
         lookup: countries,
         onSelect: function (suggestion) {
+            window.location = "../game/index.html";
 
         }
     });
@@ -164,47 +165,47 @@ $(document).ready(function () {
         }
     });
 
-    $(".logo").click(function(e) {
+    $(".logo").click(function (e) {
         e.preventDefault();
         window.location = "../../index.html"
     });
 
-    $(".menu-item-1").click(function(e) {
+    $(".menu-item-1").click(function (e) {
         e.preventDefault();
         window.location = "../game/index.html"
     });
 
-    $(".menu-item-2").click(function(e) {
+    $(".menu-item-2").click(function (e) {
         e.preventDefault();
         window.location = "../news/index.html"
     });
 
-    $(".menu-item-3").click(function(e) {
+    $(".menu-item-3").click(function (e) {
         e.preventDefault();
         window.location = "../community/index.html"
     });
 
-    $(".menu-item-4").click(function(e) {
+    $(".menu-item-4").click(function (e) {
         e.preventDefault();
         window.location = "../wwu/index.html"
     });
-    
-    $(".menu-item-5").click(function(e) {
+
+    $(".menu-item-5").click(function (e) {
         e.preventDefault();
         window.location = "../store/index.html"
     });
 
-    $(".nav-cart").click(function(e) {
+    $(".nav-cart").click(function (e) {
         e.preventDefault();
         window.location = "../cart/index.html"
     });
 
-    $(".loggedin-person").click(function(e) {
+    $(".loggedin-person").click(function (e) {
         e.preventDefault();
         window.location = "../account/index.html"
     });
 
-    $(".login-button").click(function(e) {
+    $(".login-button").click(function (e) {
         e.preventDefault();
         window.location = "../../overlay/login.html"
     });

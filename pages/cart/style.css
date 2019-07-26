@@ -177,6 +177,14 @@ input#email {
     margin-top: 8px;
 }
 
+.previous-step {
+    background: none;
+}
+
+.previous-step:hover {
+    background: #e1bee7;
+}
+
 .back-to-main-site:hover {
     color: white;
     background: #9b27af;

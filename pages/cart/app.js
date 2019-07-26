@@ -39,7 +39,7 @@ $(document).ready(function () {
         e.preventDefault();
         var res = confirm("Are you sure you want to remove the selected item(s)?");
         if (res) {
-            $(".cart-item").has($(this)).fadeOut();
+            $(".cart-item").fadeOut();
             count++;
         }
         display();
@@ -59,7 +59,7 @@ $(document).ready(function () {
         if (count == 1) {
             $(".empty").fadeIn();
             $(".total").fadeOut();
-            $(".action-buttons").fadeOut();
+            $(".checkout").fadeOut();
         }
     }
 
@@ -112,11 +112,7 @@ $(document).ready(function () {
 
     $(".next-step").click(function (e) {
         var DEFAULT = $(".default").has($(this));
-        console.log(DEFAULT[0]);
         var DEFAULT_2 = $(".default");
-        console.log(DEFAULT_2[1]);
-        console.log(DEFAULT[0] == DEFAULT_2[1]);
-        console.log(DEFAULT[0] == DEFAULT_2[2]);
         if (DEFAULT[0] == DEFAULT_2[1]) {
             $(".done").last().next().addClass("done");
             $(".billing-page").fadeOut();
@@ -125,6 +121,25 @@ $(document).ready(function () {
             $(".done").last().next().addClass("done");
             $(".verify-page").fadeOut();
             $(".verify-page").next().fadeIn();
+        }
+        if($("#creditcard").prop("checked") == true) {
+            $("#method").html("Credit card");
+        } else {
+            $("#method").html("E-Wallet")
+        }
+    })
+
+    $(".previous-step").click(function (e) {
+        var DEFAULT = $(".default").has($(this));
+        var DEFAULT_2 = $(".default");
+        if (DEFAULT[0] == DEFAULT_2[1]) {
+            $(".done").last().removeClass("done");
+            $(".billing-page").fadeOut();
+            $(".billing-page").prev().fadeIn();
+        } else if (DEFAULT[0] == DEFAULT_2[2]) {
+            $(".done").last().removeClass("done");
+            $(".verify-page").fadeOut();
+            $(".verify-page").prev().fadeIn();
         }
     })
 
@@ -169,6 +184,11 @@ $(document).ready(function () {
     var countries = [
         { value: 'DOOM', data: 'DO' },
         { value: 'DOOM Eternal', data: 'DE' },
+        { value: 'Crysis Eternal', data: 'CE' },
+        { value: 'Crysis', data: 'DE' },
+        { value: 'Crysis Eternal: Angel City', data: 'DE' },
+        { value: 'Crysis Eternal: Sole Survivor', data: 'DE' },
+        { value: 'DOOM Eternal', data: 'DE' },
         { value: 'PARAGON', data: 'PG' },
         { value: 'PARAGON:YOUNGBLOOD', data: 'PY' },
         { value: 'STEEP', data: 'ST' }
@@ -177,6 +197,7 @@ $(document).ready(function () {
     $('#search-input').autocomplete({
         lookup: countries,
         onSelect: function (suggestion) {
+            window.location = "../game/index.html";
 
         }
     });
